@@ -1,5 +1,921 @@
-% This file was created with JabRef 2.8.1.
-% Encoding: Cp1252
+@PREAMBLE{ "\providecommand{\CNFX}[1]{ {\em{\textrm{(#1)}}}}" }
+@PREAMBLE{ "\providecommand{\CNFSoCG}{\CNFX{SoCG}}" }
+@PREAMBLE{ "\providecommand{\CNFCCCG}{\CNFX{CCCG}}" }
+@PREAMBLE{ "\providecommand{\CNFFOCS}{\CNFX{FOCS}}" }
+@PREAMBLE{ "\providecommand{\CNFSODA}{\CNFX{SODA}}" }
+@PREAMBLE{ "\providecommand{\CNFSTOC}{\CNFX{STOC}}" }
+@PREAMBLE{ "\providecommand{\CNFPODS}{\CNFX{PODS}}" }
+@PREAMBLE{ "\providecommand{\CNFISAAC}{\CNFX{ISAAC}}" }
+@PREAMBLE{ "\providecommand{\CNFFSTTCS}{\CNFX{FSTTCS}}" }
+@PREAMBLE{ "\providecommand{\CNFIJCAI}{\CNFX{IJCAI}}" }
+@PREAMBLE{ "\providecommand{\CNFBROADNETS}{\CNFX{BROADNETS}}" }
+@PREAMBLE{ "\providecommand{\CNFCCC}{\CNFX{CCC}}" }
+@PREAMBLE{ "\providecommand{\CNFECCC}{\CNFX{ECCC}}" }
+@PREAMBLE{ "\providecommand{\CNFEC}{\CNFX{EC}}" }
+@PREAMBLE{ "\providecommand{\CNFITCS}{\CNFX{ITCS}}" }
+@PREAMBLE{ "\providecommand{\CNFIPCO}{\CNFX{IPCO}}" }
+@PREAMBLE{ "\providecommand{\CNFKDD}{\CNFX{KDD}}" }
+@PREAMBLE{ "\providecommand{\CNFLICS}{\CNFX{LICS}}" }
+@PREAMBLE{ "\providecommand{\CNFEC}{\CNFX{EC}}" }
+@PREAMBLE{ "\providecommand{\CNFICALP}{\CNFX{ICALP}}" }
+@PREAMBLE{ "\providecommand{\CNFESA}{\CNFX{ESA}}" }
+@STRING{colt_2003="Proc. 16th Ann. Conf. Comp. Learning Theory\CNFX{COLT}"}
+@STRING{colt_2008="Proc. 21st Ann. Conf. Comp. Learning Theory\CNFX{COLT}"}
+@string{JMLR      = "J. Mach. Learn. Research"}
+@string{ALGORITHMICA = "Algorithmica"}
+@STRING{ftml	  = "Found. Trends Mach. Learn." }
+@string{JACM   	  = "J. Assoc. Comput. Mach."}
+@string{NIPS_2002 = "Adv. Neural Info. Proc. Sys. 15\CNFX{NIPS}"}
+@string{NIPS_2003 = "Adv. Neural Info. Proc. Sys. 16\CNFX{NIPS}"}
+@string{NIPS_2004 = "Adv. Neural Info. Proc. Sys. 17\CNFX{NIPS}"}
+@string{NIPS_2005 = "Adv. Neural Info. Proc. Sys. 18\CNFX{NIPS}"}
+@string{NIPS_2006 = "Adv. Neural Info. Proc. Sys. 19\CNFX{NIPS}"}
+@string{NIPS_2007 = "Adv. Neural Info. Proc. Sys. 20\CNFX{NIPS}"}
+@string{NIPS_2008 = "Adv. Neural Info. Proc. Sys. 21\CNFX{NIPS}"}
+@string{NIPS_2009 = "Adv. Neural Info. Proc. Sys. 22\CNFX{NIPS}"}
+@string{NIPS_2010 = "Adv. Neural Info. Proc. Sys. 23\CNFX{NIPS}"}
+@string{NIPS_2011 = "Adv. Neural Info. Proc. Sys. 24\CNFX{NIPS}"}
+@string{NIPS_2012 = "Adv. Neural Info. Proc. Sys. 25\CNFX{NIPS}"}
+@string{NIPS_2013 = "Adv. Neural Info. Proc. Sys. 26\CNFX{NIPS}"}
+@string{NIPS_2014 = "Adv. Neural Info. Proc. Sys. 27\CNFX{NIPS}"}
+@string{NIPS_2015 = "Adv. Neural Info. Proc. Sys. 28\CNFX{NIPS}"}
+@STRING{icml_2003="Proc. 20th Int. Conf. Mach. Learning\CNFX{ICML}" }
+@STRING{icml_2012="Proc. 29th Int. Conf. Mach. Learning\CNFX{ICML}" }
+@STRING{icml_2013="Proc. 30th Int. Conf. Mach. Learning\CNFX{ICML}" }
+@string{KDD_2013 = "Proc. 19th ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
+@string{KDD_2014 = "Proc. 20th ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
+@STRING{ita		 = "Information Theory and Applications Workshop\CNFX{ITA}" }
+@STRING{jcss	 = "J. Comput. Sys. Sci." }
+@string{MLJ 	 = "Mach. Learn. J."}
+@string{MPROG    = "Math. Prog."}
+@string{SIOPT    = "SIAM J. Optim."}
+@STRING{orl	     = "Oper. Res. Lett." }
+
+
+@inproceedings{	ab-ojdl-14,
+	title =        {Optimal Jamming using Delayed Learning},
+	author =       {S. Amuru and R. M. Buehrer},
+	booktitle =    {2014 IEEE Military Comm.  Conf.\CNFX{MILCOM}},
+	pages =        {1528--1533},
+	year =         2014,
+	organization = {IEEE}
+}
+
+@article{	abf-finite-02,
+	title =        {Finite-time analysis of the multiarmed bandit
+	problem},
+	author =       {P. Auer and N. Cesa-Bianchi and P. Fischer},
+	journal =      {Machine learning},
+	volume =       47,
+	number =       {2-3},
+	pages =        {235--256},
+	year =         2002,
+	publisher =    {Springer}
+}
+
+@article{ahk-mwum-12,
+	author =       {Sanjeev Arora and Elad Hazan and Satyen Kale},
+	title =        {The Multiplicative Weights Update Method: a
+	Meta-Algorithm and Applications},
+	journal =      {Theory of Computing},
+	volume =       8,
+	number =       1,
+	year =         2012,
+	pages =        {121-164},
+	ee =           {http://dx.doi.org/10.4086/toc.2012.v008a006}
+}
+
+@InCollection{	  b-oaml-98,
+	author =       {A. Blum},
+	title =        {On-line algorithms in machine learning},
+	booktitle =    {Online algorithms},
+	publisher =    {Springer Berlin Heidelberg},
+	year =         1998,
+	editor =       {A. Fiat and G. Woeginger},
+	volume =       1442,
+	series =       {LNCS},
+	chapter =      14,
+	pages =        {306--325}
+}
+
+@Article{	  bc-mabp-12,
+	title =        {Regret Analysis of Stochastic and Nonstochastic
+	Multi-armed Bandit Problems},
+	journal =      ftml,
+	volume =       5,
+	numer =        1,
+	year =         2012,
+	pages =        122,
+	author =       {S. Bubeck and N. {Cesa-Bianchi}}
+}
+
+@Unpublished{	  bn-mco-13,
+	author =       {A. {Ben-Tal} and A. Nemirovski},
+	title =        {Lectures on Modern Convex Optimization},
+	note =         {Available online at
+	\url{http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf}},
+	month =        {Fall Semester},
+	year =         2013
+}
+
+@Article{bsk-sodso-03,
+	author =       {A. Blum and S. Chawla and A. Kalai},
+	title =        {Static optimality and dynamic search optimality in
+	lists and trees},
+	journal =      ALGORITHMICA,
+	year =         2003,
+	volume =       36,
+	number =       3,
+	pages =        {249--260}
+}
+
+@Article{	  bt-md-03,
+	author =       {A. Beck and M. Teboulle},
+	title =        {Mirror descent and nonlinear projected subgradient
+	methods for convex optimization},
+	journal =      orl,
+	year =         2003,
+	volume =       31,
+	pages =        {161--175}
+}
+
+@Article{c-up-91,
+	author =       {T. M. Cover},
+	title =        {Universal portfolios},
+	journal =      {Math. Finance},
+	year =         1991,
+	volume =       1,
+	number =       1,
+	pages =        {1--29}
+}
+
+@Article{cfhhsw-huea-97,
+	author =       {N. {Cesa-Bianchi} and Y. Freund and D. Haussler and
+	D.P. Helmbold and R.E. Schapire and M.K. Warmuth},
+	title =        {How to use expert advice},
+	journal =      JACM,
+	year =         1997,
+	volume =       44,
+	number =       3,
+	pages =        {426--485},
+}
+
+@Article{cs-aoacr-03,
+	author =       {K. Crammer and Y. Singer},
+	title =        {A family of additive online algorithms for category
+	ranking},
+	journal =      JMLR,
+	year =         2003,
+	volume =       3,
+	pages =        {1025--1058}
+}
+
+@article{dgsx-odopmb-12,
+	title =        {Optimal distributed online prediction using
+	mini-batches},
+	author =       {O. Dekel and R. {Gilad-Bachrach} and O. Shamir and
+	L. Xiao},
+	journal =      jmlr,
+	volume =       13,
+	number =       1,
+	pages =        {165--202},
+	year =         2012,
+}
+
+@Article{dhs-asm-11,
+	author =       {J. Duchi and E. Hazan and Y. Singer},
+	title =        {Adaptive subgradient methods for online learning and
+	stochastic optimization},
+	journal =      JMLR,
+	year =         2011,
+	volume =       12,
+	pages =        {2121--2159},
+	month =        jul
+}
+
+@inproceedings{	djm-eopds-13,
+	title =        {Estimation, Optimization, and Parallelism when Data
+	is Sparse},
+	author =       {J. Duchi and M.I. Jordan and B. McMahan},
+	booktitle =    nips_2013,
+	pages =        {2832--2840},
+	year =         2013,
+}
+
+@inproceedings{f-pdaf-14,
+	title =        {Practical Lessons from Predicting Clicks on Ads at
+	Facebook},
+	author =       {X. He and J. Pan and O. Jin and T. Xu and B. Liu and
+	T. Xu and Y. Shi and A. Atallah and R. Herbrich and
+	S. Bowers and J. {Quiñonero Candela}},
+	booktitle =    kdd_2014,
+	pages =        {1--9},
+	year =         2014,
+	organization = {ACM}
+}
+
+@InProceedings{g-acp-13,
+	author =       {H. B. McMahan and G. Holt and D. Sculley and
+	M. Young and D. Ebner and J. Grady and L. Nie and
+	T. Phillips and E. Davydov and D. Golovin and
+	S. Chikkerur and D. Liu and M. Wattenberg and
+	A. M. Hrafnkelsson and T. Boulous and J. Kubica},
+	title =        {Ad click prediction: a view from the trenches},
+	booktitle =    KDD_2013,
+	year =         2013,
+	pages =        {1222-1230}
+}
+
+@Unpublished{h-oco-15,
+	author =       {E. Hazan},
+	title =        {Introduction to Online Convex Optimization},
+	note =         {Internet draft available at
+	\url{http://ocobook.cs.princeton.edu}},
+	ee =           {http://ocobook.cs.princeton.edu},
+	year =         2015
+}
+
+@article{	hak-logarithmic-07,
+	title =        {Logarithmic regret algorithms for online convex
+	optimization},
+	author =       {E. Hazan and A. Agarwal and S. Kale},
+	journal =      MLJ,
+	volume =       69,
+	number =       {2-3},
+	pages =        {169--192},
+	year =         2007,
+	publisher =    {Springer}
+}
+
+@InProceedings{	  hk-ecu-08,
+	author =       {E. Hazan and S. Kale},
+	title =        {Extracting certainty from uncertainty: Regret
+	bounded by variation in costs},
+	booktitle =    colt_2008,
+	year =         2008,
+	pages =        {57--68}
+}
+
+@inproceedings{	hk-projectionFree-12,
+	author =       {E. Hazan and S. Kale},
+	booktitle =    icml_2012,
+	title =        {Projection-free Online Learning.},
+	year =         2012
+}
+
+@Book{hl-cama1-93,
+	author =    {J.B. {Hiriart-Urruty} and C. Lemaréchal},
+	title =        {Convex analysis and Minimization Algorithms {I}},
+	publisher =    {{Springer}-{Verlag}},
+	year =         1993,
+	volume =    305,
+	series =    {Grundlehren der mathematischen Wissenschaften}}
+
+@Book{hl-cama2-93,
+	author =    {J.B. {Hiriart-Urruty} and C. Lemaréchal},
+	title =        {Convex analysis and Minimization Algorithms {II}},
+	publisher =    {{Springer}-{Verlag}},
+	year =         1993,
+	volume =    306,
+	series =    {Grundlehren der mathematischen Wissenschaften}}
+
+@Article{hs-bpdt-97,
+	author =       {D. Helmbold and R. Schapire},
+	title =        {Predicting nearly as well as the best pruning of a
+	decision tree},
+	journal =      MLJ,
+	year =         1997,
+	volume =       27,
+	number =       1,
+	pages =        {61--68},
+}
+
+@inproceedings{	hzkls-demab-13,
+	title =        {Distributed exploration in multi-armed bandits},
+	author =       {E. Hillel and Z. Karnin and T. Koren and R. Lempel
+	and O. Somekh},
+	booktitle =    nips_2013,
+	pages =        {854--862},
+	year =         2013
+}
+
+@inproceedings{jgs-oldf-13,
+	author =       {P. Joulani and A. György and C. Szepesvári},
+	title =        {Online Learning under Delayed Feedback.},
+	booktitle =    icml_2013,
+	volume =       28,
+	year =         2013
+}
+
+@Article{	  kv-odp-05,
+	title =        {Efficient algorithms for online decision problems},
+	author =       {A. Kalai and S. Vempala},
+	journal =      jcss,
+	year =         2005,
+	volume =       71,
+	pages =        {291--307},
+	note =         {Extended abstract in } # colt_2003 # {, 2003}
+}
+
+@inproceedings{lsz-slf-09,
+	title =        {Slow Learners are Fast},
+	author =       {J. Langford and A. J. Smola and M. Zinkevich},
+	booktitle =    NIPS_2009,
+	pages =        {2331--2339},
+	year =         2009,
+	url =
+	{http://papers.nips.cc/paper/3888-slow-learners-are-fast.pdf}
+}
+
+@inproceedings{lz-dmabmdp-10,
+	title =        {Decentralized multi-armed bandit with multiple
+	distributed players},
+	author =       {K. Liu and Q. Zhao},
+	booktitle =    ita,
+	pages =        {1--10},
+	year =         2010,
+	organization = {IEEE}
+}
+
+@inproceedings{	m-delayed-05,
+	title =        {On-line learning with delayed label feedback},
+	author =       {Chris Mesterharm},
+	booktitle =    {Algorithmic Learning Theory},
+	pages =        {399--413},
+	year =         2005,
+	organization = {Springer}
+}
+
+@InProceedings{	  ms-dta-14,
+	author =       {H.B. {McMahan} and M. Streeter},
+	title =        {Delay-Tolerant Algorithms for Asynchronous
+	Distributed Online Learning},
+	booktitle =    nips_2014,
+	year =         2014,
+	pages =        {2915--2923}
+}
+
+@inproceedings{	msj-odsb-14,
+	title =        {On-demand, spot, or both: Dynamic resource
+	allocation for executing batch jobs in the cloud},
+	author =       {I. Menache and O. Shamir and N. Jain},
+	booktitle =    {11th Int. Conf. on Autonomic Comput.\CNFX{ICAC}},
+	year =         2014,
+}
+
+@Book{n-co-04,
+	author =       {Y. Nesterov},
+	title =        {Introductory lectures on convex optimization},
+	publisher =    {Springer},
+	year =         2004,
+	volume =       87,
+	series =       {Applied Optimization}
+}
+
+@inproceedings{ngsa-omdpbf-10,
+	title =        {Online Markov decision processes under bandit
+	feedback},
+	author =       {G. Neu and A. Antos and A. Gy{\"o}rgy and
+	C. Szepesv{\'a}ri},
+	booktitle =    nips_2010,
+	pages =        {1804--1812},
+	year =         2010
+}
+
+@Book{		  ny-pcmeo-83,
+	author =       {A.S. Nemirovski and D.B. Yudin},
+	title =        {Problem complexity and method efficiency in
+	optimization},
+	publisher =    {John Wiley \& Sons},
+	year =         1983,
+	series =       {Wiley-Interscience Series in Discrete Mathematics}
+}
+
+@article{	pjylh-gasgd-13,
+	title =        {GPU asynchronous stochastic gradient descent to
+	speed up neural network training},
+	author =       {T. Paine and H. Jin and J. Yang and Z. Lin and
+	T. Huang},
+	journal =      {arXiv preprint arXiv:1312.6186},
+	year =         2013
+}
+
+@Book{		  r-ca-70,
+	author =       {R. T. Rockafeller},
+	title =        {Convex Analysis},
+	publisher =    {Princeton University Press},
+	year =         1970,
+	series =       {Princeton Mathematical Series}
+}
+
+@article{	rc-keeping-14,
+	title =        {Keeping Things that Matter: An Exploration on
+	Delayed Feedback Online Learning},
+	author =       {Ribeiro, Marco Tulio and Cano, Ignacio},
+	year =         2013
+}
+
+@InProceedings{	  rrwn-h-11,
+	author =       {B. Recht and C. Re and S. Wright and F. Niu},
+	title =        {Hogwild: a lock-free approach to parallelizing
+	stochastic gradient descent},
+	booktitle =    nips_2011,
+	year =         2011,
+	pages =        {693--701}
+}
+
+@inproceedings{	rss-stronglyConvex-12,
+	author =       {A. Rakhlin and O. Shamir and K. Sridharan},
+	title =        {Making Gradient Descent Optimal for Strongly Convex
+	Stochastic Optimization},
+	booktitle =    icml_2012,
+	year =         2012,
+	url =          {http://icml.cc/discuss/2012/261.html}
+}
+
+@Article{	  s-oloco-11,
+	author =       {S. {Shalev-Shwartz}},
+	title =        {Online learning and online convex optimization},
+	journal =      ftml,
+	year =         2011,
+	volume =       4,
+	number =       2,
+	pages =        {107--194}
+}
+
+@PhDThesis{	  s-thesis,
+	author =       {S. {Shalev-Shwartz}},
+	title =        {Online Learning: Theory, algorithms, and
+	applications},
+	school =       {The Hebrew University of Jerusalem},
+	year =         2007,
+	ee =
+	{http://www.cs.huji.ac.il/~shais/papers/ShalevThesis07.pdf},
+	month =        {July}
+}
+
+@phdthesis{		sh-online-07,
+	title =        {Online learning: Theory, algorithms, and
+	applications},
+	author =       {S. Shalev-Shwartz},
+	school =       {Hebrew University},
+	year =         2007
+}
+
+@Article{	  ss-pdpolo-07,
+	author =       {Y. Singer and S. {Shalev-Shwartz}},
+	title =        {A Primal-dual perspective of onine learning
+	algoritmhs},
+	journal =      {Mach. Learn.},
+	year =         2007,
+	volume =       69,
+	pages =        {115--142}
+}
+
+@Article{st-sabst-85,
+	author =       {D.D. Sleator and R.E. Tarjan},
+	title =        {Self-Adjusting Binary search trees},
+	journal =      JACM,
+	year =         1985,
+	volume =       32,
+	number =       3,
+	pages =        {652--686},
+}
+
+@Article{st-stm-97,
+	author =       {N. Shavit and D. Touitou},
+	title =        {Software transactional memory},
+	journal =      {Dist. Comput.},
+	year =         1997,
+	volume =       10,
+	number =       2,
+	pages =        {99--116}
+}
+
+@inproceedings{szh-sgc-13,
+	author =       {O. Shamir and T. Zhang},
+	title =        {Stochastic Gradient Descent for Non-smooth
+	Optimization: Convergence Results and Optimal
+	Averaging Schemes},
+	booktitle =    icml_2013,
+	pages =        {71--79},
+	year =         2013
+}
+
+@article{	t-loupea-33,
+	title =        {On the likelihood that one unknown probability
+	exceeds another in view of the evidence of two
+	samples},
+	author =       {Thompson, William R},
+	journal =      {Biometrika},
+	pages =        {285--294},
+	year =         1933,
+	publisher =    {JSTOR}
+}
+
+@Article{tw-pkmu-03,
+	author =       {E. Takimoto and M. Warmuth},
+	title =        {Path Kernels and Multiplicative Updates},
+	journal =      JMLR,
+	year =         2003,
+	volume =       4,
+	pages =        {773--818},
+}
+
+@InCollection{	  v-naarm-12,
+	author =       {R. Vershynin},
+	title =        {Introduction to the non-asymptotic analysis of
+	random matrices},
+	booktitle =    {Compressed Sensing, Theory and Applications},
+	year =         2012,
+	editor =       {Y. Eldar and G. Kutynick},
+	chapter =      5,
+	pages =        {210--168},
+	publisher =    {Cambridge Univ. Press}
+}
+
+@Article{wo-dpis-02,
+	author =       {M.J. Weinberger and E. Ordentlich},
+	title =        {On delayed prediction of individual sequences},
+	journal =      {IEEE Trans. Inf. Theory},
+	year =         2002,
+	volume =       48,
+	number =       7,
+	pages =        {1959--1976}
+}
+
+@Book{		  z-cagvs-02,
+	author =       {C. Zălinescu},
+	title =        {Convex analysis in general vector spaces},
+	publisher =    {World Scientific},
+	year =         2002
+}
+
+@InProceedings{	  z-ocp-03,
+	author =       {M. Zinkevich},
+	title =        {Online Convex Programming and Generalized
+	Infinitesimal Gradient Ascent},
+	booktitle =    icml_2003,
+	pages =        {928--936},
+	year =         2003
+}
+
+@inproceedings{zels-psgd-10,
+	title =        {Parallelized stochastic gradient descent},
+	author =       {M. Zinkevich and M. Weimer and L. Li and
+	A. J. Smola},
+	booktitle =    NIPS_2010,
+	pages =        {2595--2603},
+	year =         2010
+}
+
+@PhdThesis{r-thesis,
+	author =       {D. Riabko},
+	title =        {On the flexibility of theoretical models for pattern
+	recognition},
+	school =       {University of London},
+	year =         2005,
+	month =     {April}}
+
+
+@Article{dcr-asco-15,
+	author =       {J. C. Duchi and T. Chaturapruek and C. Ré},
+	title =        {Asynchronous stochastic convex optimization},
+	journal =      {CoRR},
+	volume =       {abs/1508.00882},
+	year =         2015,
+	ee =           {http://arxiv.org/abs/1508.00882},
+	note =      {To appear in }#NIPS_2015#{, 2015},
+}
+
+@Article{w-cda-15,
+	author =       {S. J. Wright},
+	title =        {Coordinate descent Algorithms},
+	journal =      MPROG,
+	series = {B},
+	year =         2015,
+	volume =    151,
+	number =    {3--34}}
+
+@Article{lwrbs-apscda-15,
+	author =       {J. Liu and S. J. Wright and C. Ré and V. Bittorf and S. Sridhar},
+	title =        {An asynchronous parallel stochastic coordiante descent algorithm},
+	journal =      JMLR,
+	year =         2015,
+	volume =    16,
+	pages =     {285--322}}
+
+
+@Book{bt-pdc-89,
+	author =    {D. P. Bertsekas and J. N. Tsitsiklis},
+	title =        {Parallel and Distributed Computation: Numerical Methods},
+	publisher =    {Prentice-Hall},
+	year =         1989
+}
+
+
+@Article{bmn-osmdom-01,
+	author =       {A. {Ben-Tal} and T. Margalit and A. Nemirovski},
+	title =        {The ordered subsets mirror descent optimization method with applications to tomography},
+	journal =      SIOPT,
+	year =         2001,
+	volume =    12,
+	number =    1,
+	pages =     {79--108}}
+
+@article{cesa2004generalization,
+	title={On the generalization ability of on-line learning algorithms},
+	author={Cesa-Bianchi, Nicolo and Conconi, Alex and Gentile, Claudio},
+	journal={Information Theory, IEEE Transactions on},
+	volume={50},
+	number={9},
+	pages={2050--2057},
+	year={2004},
+	publisher={IEEE}
+}
+
+@inproceedings{jaggi2013revisiting,
+	title={Revisiting Frank-Wolfe: Projection-free sparse convex optimization},
+	author={Jaggi, Martin},
+	booktitle={Proceedings of the 30th International Conference on Machine Learning (ICML-13)},
+	pages={427--435},
+	year={2013}
+}
+
+@article{frank1956algorithm,
+	title={An algorithm for quadratic programming},
+	author={Frank, Marguerite and Wolfe, Philip},
+	journal={Naval research logistics quarterly},
+	volume={3},
+	number={1-2},
+	pages={95--110},
+	year={1956},
+	publisher={Wiley Online Library}
+}
+
+@article{agrawal1995sample,
+	title={Sample mean based index policies with O (log n) regret for the multi-armed bandit problem},
+	author={Agrawal, Rajeev},
+	journal={Advances in Applied Probability},
+	pages={1054--1078},
+	year={1995},
+	publisher={JSTOR}
+}
+
+@inproceedings{agrawal2014bandits,
+	title={Bandits with concave rewards and convex knapsacks},
+	author={Agrawal, Shipra and Devanur, Nikhil R},
+	booktitle={Proceedings of the fifteenth ACM conference on Economics and computation},
+	pages={989--1006},
+	year={2014},
+	organization={ACM}
+}
+
+@article{auer2003using,
+	title={Using confidence bounds for exploitation-exploration trade-offs},
+	author={Auer, Peter},
+	journal={The Journal of Machine Learning Research},
+	volume={3},
+	pages={397--422},
+	year={2003},
+	publisher={JMLR. org}
+}
+
+@inproceedings{badanidiyuru2013bandits,
+	title={Bandits with knapsacks},
+	author={Badanidiyuru, Ashwinkumar and Kleinberg, Robert and Slivkins, Aleksandrs},
+	booktitle={Foundations of Computer Science (FOCS), 2013 IEEE 54th Annual Symposium on},
+	pages={207--216},
+	year={2013},
+	organization={IEEE}
+}
+
+@article{littlestone1988learning,
+  title={Learning quickly when irrelevant attributes abound: A new linear-threshold algorithm},
+  author={Littlestone, Nick},
+  journal={Machine learning},
+  volume={2},
+  number={4},
+  pages={285--318},
+  year={1988},
+  publisher={Springer}
+}
+
+@article{lari1990estimation,
+  title={The estimation of stochastic context-free grammars using the inside-outside algorithm},
+  author={Lari, Karim and Young, Steve J},
+  journal={Computer speech \& language},
+  volume={4},
+  number={1},
+  pages={35--56},
+  year={1990},
+  publisher={Elsevier}
+}
+
+@article{myerson1981optimal,
+	title={Optimal auction design},
+	author={Myerson, Roger B},
+	journal={Mathematics of operations research},
+	volume={6},
+	number={1},
+	pages={58--73},
+	year={1981},
+	publisher={INFORMS}
+}
+
+@inproceedings{chang2011inference,
+  title={Inference protocols for coreference resolution},
+  author={Chang, Kai-Wei and Samdani, Rajhans and Rozovskaya, Alla and Rizzolo, Nick and Sammons, Mark and Roth, Dan},
+  booktitle={Proceedings of the Fifteenth Conference on Computational Natural Language Learning: Shared Task},
+  pages={40--44},
+  year={2011},
+  organization={Association for Computational Linguistics}
+}
+
+@article{moitraalgorithmic,
+  title={Algorithmic Aspects of Machine Learning},
+  author={Moitra, Ankur}
+}
+
+
+@inproceedings{levesque2011winograd,
+  title={The Winograd schema challenge.},
+  author={Levesque, Hector J and Davis, Ernest and Morgenstern, Leora},
+  booktitle={AAAI Spring Symposium: Logical Formalizations of Commonsense Reasoning},
+  year={2011}
+}
+
+@article{tesauro1995temporal,
+  title={Temporal difference learning and TD-Gammon},
+  author={Tesauro, Gerald},
+  journal={Communications of the ACM},
+  volume={38},
+  number={3},
+  pages={58--68},
+  year={1995}
+}
+
+@article{turing1950computing,
+  title={Computing machinery and intelligence},
+  author={Turing, Alan M},
+  journal={Mind},
+  pages={433--460},
+  year={1950},
+  publisher={JSTOR}
+}
+
+@article{watkins1992q,
+  title={Q-learning},
+  author={Watkins, Christopher JCH and Dayan, Peter},
+  journal={Machine learning},
+  volume={8},
+  number={3-4},
+  pages={279--292},
+  year={1992},
+  publisher={Springer}
+}
+
+@inproceedings{freund1995desicion,
+  title={A desicion-theoretic generalization of on-line learning and an application to boosting},
+  author={Freund, Yoav and Schapire, Robert E},
+  booktitle={Computational learning theory},
+  pages={23--37},
+  year={1995},
+  organization={Springer}
+}
+
+@article{chang2013question,
+  title={Question answering using enhanced lexical semantic models},
+  author={Chang, Wen-tau Yih Ming-Wei and Pastusiak, Christopher Meek Andrzej},
+  year={2013}
+}
+
+@inproceedings{chambers2008unsupervised,
+  title={Unsupervised Learning of Narrative Event Chains.},
+  author={Chambers, Nathanael and Jurafsky, Daniel},
+  booktitle={ACL},
+  pages={789--797},
+  year={2008},
+  organization={Citeseer}
+}
+
+
+@inproceedings{chambers2009unsupervised,
+  title={Unsupervised learning of narrative schemas and their participants},
+  author={Chambers, Nathanael and Jurafsky, Dan},
+  booktitle={Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP: Volume 2-Volume 2},
+  pages={602--610},
+  year={2009},
+  organization={Association for Computational Linguistics}
+}
+
+@article{liu2004conceptnet,
+  title={ConceptNet—a practical commonsense reasoning tool-kit},
+  author={Liu, Hugo and Singh, Push},
+  journal={BT technology journal},
+  volume={22},
+  number={4},
+  pages={211--226},
+  year={2004},
+  publisher={Springer}
+}
+
+@inproceedings{shahaf2013information,
+  title={Information cartography: creating zoomable, large-scale maps of information},
+  author={Shahaf, Dafna and Yang, Jaewon and Suen, Caroline and Jacobs, Jeff and Wang, Heidi and Leskovec, Jure},
+  booktitle={Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={1097--1105},
+  year={2013},
+  organization={ACM}
+}
+
+@inproceedings{shahaf2012metro,
+  title={Metro maps of science},
+  author={Shahaf, Dafna and Guestrin, Carlos and Horvitz, Eric},
+  booktitle={Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={1122--1130},
+  year={2012},
+  organization={ACM}
+}
+
+@article{andreasgrounding,
+  title={Grounding Language with Points and Paths in Continuous Spaces},
+  author={Andreas, Jacob and Klein, Dan}
+}
+
+@article{raghavancross,
+  title={Cross-narrative temporal ordering of medical events},
+  author={Raghavan, Preethi and Fosler-Lussier, Eric and Elhadad, No{\'e}mie and Lai, Albert M}
+}
+
+@inproceedings{balasubramanian2013generating,
+  title={Generating Coherent Event Schemas at Scale.},
+  author={Balasubramanian, Niranjan and Soderland, Stephen and Mausam, Oren Etzioni and Etzioni, Oren},
+  booktitle={EMNLP},
+  pages={1721--1731},
+  year={2013}
+}
+
+@article{schapire1999improved,
+  title={Improved boosting algorithms using confidence-rated predictions},
+  author={Schapire, Robert E and Singer, Yoram},
+  journal={Machine learning},
+  volume={37},
+  number={3},
+  pages={297--336},
+  year={1999},
+  publisher={Springer}
+}
+
+@InProceedings{ARAKI14.963,
+  author = {Jun Araki and Zhengzhong Liu and Eduard Hovy and Teruko Mitamura},
+  title = {Detecting Subevent Structure for Event Coreference Resolution},
+  booktitle = {Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14)},
+  year = {2014},
+  month = {may},
+  date = {26-31},
+  address = {Reykjavik, Iceland},
+  editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Hrafn Loftsson and Bente Maegaard and Joseph Mariani and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+  publisher = {European Language Resources Association (ELRA)},
+  isbn = {978-2-9517408-8-4},
+  language = {english}
+ }
+
+@article{rakhlin2009lecture,
+  title={Lecture notes on online learning},
+  author={Rakhlin, Alexander and Tewari, A},
+  journal={Draft, April},
+  year={2009}
+}
+
+@article{shalev2011online,
+  title={Online learning and online convex optimization},
+  author={Shalev-Shwartz, Shai},
+  journal={Foundations and Trends in Machine Learning},
+  volume={4},
+  number={2},
+  pages={107--194},
+  year={2011}
+}
+
+
+@inproceedings{taskar2005learning,
+  title={Learning structured prediction models: A large margin approach},
+  author={Taskar, Ben and Chatalbashev, Vassil and Koller, Daphne and Guestrin, Carlos},
+  booktitle={Proceedings of the 22nd international conference on Machine learning},
+  pages={896--903},
+  year={2005},
+  organization={ACM}
+}
+
+@inproceedings{tsochantaridis2004support,
+  title={Support vector machine learning for interdependent and structured output spaces},
+  author={Tsochantaridis, Ioannis and Hofmann, Thomas and Joachims, Thorsten and Altun, Yasemin},
+  booktitle={Proceedings of the twenty-first international conference on Machine learning},
+  pages={104},
+  year={2004},
+  organization={ACM}
+}
 
 @ARTICLE{alvarez2011computationally,
   author = {{\'A}lvarez, M.A. and Lawrence, N.D.},
@@ -10,6 +926,12 @@
   pages = {1425--1466}
 }
 
+@article{nemirovsky1983problem,
+  title={Problem complexity and method efficiency in optimization.},
+  author={Nemirovsky, Arkadi{\u\i}} Semenovich and Yudin, David Borisovich},
+  year={1983}
+}
+
 @incollection{altun2006unifying,
   title={Unifying divergence minimization and statistical inference via convex duality},
   author={Altun, Yasemin and Smola, Alex},
@@ -17,6 +939,14 @@
   pages={139--153},
   year={2006},
   publisher={Springer}
+}
+
+@book{manning1999foundations,
+  title={Foundations of statistical natural language processing},
+  author={Manning, Christopher D and Sch{\"u}tze, Hinrich},
+  volume={999},
+  year={1999},
+  publisher={MIT Press}
 }
 
 @article{kschischang2001factor,
@@ -29,6 +959,19 @@
   year={2001},
   publisher={IEEE}
 }
+
+
+@article{neal2000markov,
+  title={Markov chain sampling methods for Dirichlet process mixture models},
+  author={Neal, Radford M},
+  journal={Journal of computational and graphical statistics},
+  volume={9},
+  number={2},
+  pages={249--265},
+  year={2000},
+  publisher={Taylor \& Francis Group}
+}
+
 
 @inproceedings{frey2002extending,
   title={Extending factor graphs so as to unify directed and undirected graphical models},
@@ -353,27 +1296,6 @@
   publisher = {International Society for Bayesian Analysis}
 }
 
-@ARTICLE{Blei2006d,
-  author = {Blei, David M and Jordan, Michael I},
-  title = {Variational inference for Dirichlet process mixtures},
-  journal = {Bayesian Analysis},
-  year = {2006},
-  volume = {1},
-  pages = {121--143},
-  number = {1},
-  publisher = {International Society for Bayesian Analysis}
-}
-
-@ARTICLE{blei2006variational,
-  author = {Blei, David M and Jordan, Michael I},
-  title = {Variational inference for Dirichlet process mixtures},
-  journal = {Bayesian Analysis},
-  year = {2006},
-  volume = {1},
-  pages = {121--143},
-  number = {1},
-  publisher = {International Society for Bayesian Analysis}
-}
 
 @INPROCEEDINGS{blei2003modeling,
   author = {Blei, David M and Jordan, Michael I},
