@@ -7,13 +7,13 @@
 \usepackage{amsthm}%
 \usepackage[strict]{changepage}%
 \usepackage{graphicx}%
-% \usepackage[colorlinks=true,linkcolor=blue,ocgcolorlinks]{hyperref}%
-\usepackage{cancel}%
-% \usepackage[usenames,dvipsnames]{color}%
-\usepackage{verbatim}%
-\usepackage{paralist}%
-\usepackage{xparse}%
-\usepackage{xstring} %
+\usepackage[colorlinks=true,linkcolor=blue,ocgcolorlinks]{hyperref}%
+%\usepackage{cancel}%
+\usepackage[usenames,dvipsnames]{color}%
+%\usepackage{verbatim}%
+%\usepackage{paralist}%
+%\usepackage{xparse}%
+%\usepackage{xstring} %
 \usepackage{environ}%
 \usepackage{framed}%
 \usepackage{mleftright}%
@@ -26,6 +26,7 @@
 % \usepackage{placeins} %
 \usepackage[sectionbib]{chapterbib} %
 \usepackage{xspace}                 %
+\usepackage[ruled,vlined]{algorithm2e}
 
 \renewcommand*{\thefootnote}{\fnsymbol{footnote}}
 
@@ -33,20 +34,20 @@
 \newcommand{\etal}{\textit{et al.}\xspace}
 
 \hypersetup{%
-  citecolor = Maroon%
+	citecolor = Maroon%
 }
 
 
 \mdfsetup{ %
-  innerleftmargin = 1ex, %
-  innertopmargin = 1ex, %
-  innerrightmargin = 1ex, %
-  innerbottommargin = 1ex, %
-  skipabove=0pt, %
-  skipbelow=0pt, %
-  % bottomline=false, %
-  % rightline=false, %
-  % topline=false, %
+	innerleftmargin = 1ex, %
+	innertopmargin = 1ex, %
+	innerrightmargin = 1ex, %
+	innerbottommargin = 1ex, %
+	skipabove=0pt, %
+	skipbelow=0pt, %
+	% bottomline=false, %
+	% rightline=false, %
+	% topline=false, %
 }
 
 %%%% No vertical padding for wrapfigure %%%%
@@ -70,6 +71,7 @@
 \newcommand{\sign}[1]{\text{sign}\left( #1 \right)}
 \newcommand{\expec}[2]{\mathbb{E}_{#1}\brac{#2}}
 \newcommand{\var}[2]{\mathbb{V}_{#1}\brac{#2}}
+\newcommand{\Error}[2]{\text{Err}_{#1}(#2)}
 \newcommand{\err}{\text{Err}_{\D}(h)}
 \newcommand{\errOpt}{\text{Err}_{\D}(h^*)}
 \newcommand{\bra}[1]{ \left\lbrace #1 \right\rbrace }
@@ -97,6 +99,7 @@
 
 \newcommand{\fix}{\marginpar{FIX}} %
 \newcommand{\new}{\marginpar{NEW}} %
+%% indicator function 
 \newcommand{\indicate}[1]{I_{\bracketsof{#1}}}
 \newcommand{\delivered}{\mathcal{F}}
 \newcommand{\deliveredat}[1]{\delivered_{#1}}
@@ -249,10 +252,10 @@
 %% Surjections %%
 \makeatletter
 \providecommand*{\twoheadrightarrowfill@}{%
-  \arrowfill@\relbar\relbar\twoheadrightarrow
+	\arrowfill@\relbar\relbar\twoheadrightarrow
 }
 \providecommand*{\xtwoheadrightarrow}[2][]{%
-  \ext@arrow 0579\twoheadrightarrowfill@{#1}{#2}%
+	\ext@arrow 0579\twoheadrightarrowfill@{#1}{#2}%
 }
 \makeatother
 \newcommand{\onto}{\twoheadrightarrow}
@@ -262,11 +265,11 @@
 \newcommand{\bijection}{\longleftrightarrow}%
 \makeatletter
 \newcommand\longleftrightarrowfill@{%
-  \arrowfill@\leftarrow\relbar\rightarrow}%
+	\arrowfill@\leftarrow\relbar\rightarrow}%
 \makeatother
 \newcommand{\xbijection}{\xleftrightarrow}%
 \newcommand{\isomorphism}[1][]{\xrightarrow[
-  \,\smash{\raisebox{0.8ex}{\ensuremath{\scriptstyle\sim}}}\,]{#1}}
+	\,\smash{\raisebox{0.8ex}{\ensuremath{\scriptstyle\sim}}}\,]{#1}}
 \newcommand{\isom}{\isomorphism}%
 \newcommand{\xisom}[1]{\isom[#1]}%
 
@@ -296,6 +299,47 @@
 %%%%%%%% LEARNING THEORY %%%%%%%%
 
 \newcommand{\loss}{\ell} %
+\newcommand{\A}{\mathcal{A}} %
+\newcommand{\C}{\mathcal{C}} %
+\newcommand{\F}{\mathcal{F}} %
+\newcommand{\G}{\mathcal{G}} %
+\newcommand{\Hy}{\mathcal{H}} %
+\newcommand{\K}{\mathcal{K}} %
+\newcommand{\X}{\mathcal{X}} %
+\newcommand{\Y}{\mathcal{Y}} %
+\newcommand{\Z}{\mathcal{Z}} %
+\newcommand{\U}{\mathcal{U}} %
+\newcommand{\Po}{\mathcal{P}} 
+\newcommand{\Dx}{D_\mathcal{X}} %
+\newcommand{\Dy}{D_\mathcal{Y}} %
+\newcommand{\Dxy}{D_\mathcal{X \times Y}} %
+\newcommand{\ndim}[1]{\text{nDim}(#1)} %
+\newcommand{\samples}{S = \set{(x_i, y_i)}_{i=1}^m \in (\X \times \Y)^m  } %
+\newcommand{\x}{\mathbf{x}} %
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\w}{\mathbf{w}}
+
+% polynomial 
+\newcommand{\size}[1]{\text{size}\paran{#1}}
+
+%%
+\newcommand{\risk}{R(h)} %
+%\newcommand{\empRisk}[2][h, ]{\hat{R}_{#2}(#1)} %
+\DeclareDocumentCommand{\empRisk}{ O{h} O{} }{\hat{R}_{#2}(#1)}
+
+
+% Rademacher complexities 
+\newcommand{\rmacher}[3][]{\mathfrak{R}^{#1}_{#2}(#3)}
+\newcommand{\empRmacher}[3][]{\hat{\mathfrak{R}}^{#1}_{#2}(#3)}
+
+%% margin-related stuff 
+\newcommand{\margin}{\rho_h\paran{x,y}} %
+\newcommand{\marginDef}[1][]{ h(x_{#1},y) - \max_{y' \neq y} h(x_{#1},y') } %
+\newcommand{\marginLoss}{\ell_\rho(\margin)}
+
+
+%% vc dimension stuff 
+\newcommand{\growth}[2]{\Pi_{#1}(#2)}
 
 %%%% Follow-The-Leader %%%%
 
@@ -327,76 +371,81 @@
 \newcommand{\roundexpertcost}{\costfor{\expert}{\round}}
 
 
+%% covering number 
+\newcommand{\covering}[1]{\mathcal{N} (#1)}
+
+
+
 %%%%%%%%%%%%%%%% ALGORITHMS %%%%%%%%%%%%%%%%
 
 \newenvironment{pseudocode}{ \tt %
-  % \begin{quote}
-  \begin{minipage}{\linewidth}
-    % \begin{framed}
-  }{
-    % \end{framed}
-  \end{minipage}
-  % \end{quote}
+	% \begin{quote}
+	\begin{minipage}{\linewidth}
+		% \begin{framed}
+	}{
+	% \end{framed}
+\end{minipage}
+% \end{quote}
 }
 
 
 \newenvironment{theroutine}[1]{
-  \normalsize
-  \vspace{-\partopsep}
-  \begin{tabbing}
-    \quad\=\quad\=\quad\=\quad\=\quad\=\quad\=\kill
-    {\large #1} \+ \\
-  }{%
-    %
-  \end{tabbing}
-  \vspace{-\baselineskip}
-  \vspace{-\partopsep}
+	\normalsize
+	\vspace{-\partopsep}
+	\begin{tabbing}
+		\quad\=\quad\=\quad\=\quad\=\quad\=\quad\=\kill
+		{\large #1} \+ \\
+	}{%
+	%
+\end{tabbing}
+\vspace{-\baselineskip}
+\vspace{-\partopsep}
 }
 
 \DeclareDocumentEnvironment{routine}{o m g}{
-  \begin{theroutine}{%
-      \IfNoValueTF{#1}{%
-        \IfNoValueTF{#3}{\newalgo{#2}}{\newalgo{#2}{#3}}%
-      }{%
-        \IfNovalueTF{#3}{\newalgo[#1]{#2}}{\newalgo[#1]{#2}{#3}}%
-      }%
-    }%
-  }{%
-  \end{theroutine}%
+	\begin{theroutine}{%
+			\IfNoValueTF{#1}{%
+				\IfNoValueTF{#3}{\newalgo{#2}}{\newalgo{#2}{#3}}%
+			}{%
+			\IfNovalueTF{#3}{\newalgo[#1]{#2}}{\newalgo[#1]{#2}{#3}}%
+		}%
+	}%
+}{%
+\end{theroutine}%
 }
 
 % Naming algorithms
 \newcommand{\algo}[1]{%
-  {\normalfont%
-    \texttt{%
-      \StrSubstitute{#1}{-}{-{\allowbreak}}%
-    }%
-  }%
+	{\normalfont%
+		\texttt{%
+			\StrSubstitute{#1}{-}{-{\allowbreak}}%
+		}%
+	}%
 }
 
 % New terms with links
 \DeclareDocumentCommand{\newalgo}{o m g}{%
-  \IfNoValueTF{#1}{%
-    \hypertarget{algo:#2}{%
-      \algo{#2\IfNoValueF{#3}{(#3)}}%
-    }%
-  }{%
-    \hypertarget{algo:#1}{%
-      \algo{#2\IfNoValueF{#3}{(#3)}}%
-    }%
-  }%
+	\IfNoValueTF{#1}{%
+		\hypertarget{algo:#2}{%
+			\algo{#2\IfNoValueF{#3}{(#3)}}%
+		}%
+	}{%
+	\hypertarget{algo:#1}{%
+		\algo{#2\IfNoValueF{#3}{(#3)}}%
+	}%
+}%
 }
 
 
 \DeclareDocumentCommand{\refalgo}{o m g}{%
-  \IfNoValueTF{#1}{%
-    \hyperlink{algo:#2}{\algo{%
-        \StrSubstitute[0]{#2}{-}{-{\allowbreak}}%
-        \IfNoValueF{#3}{(#3)}}%
-    }%
-  }{%
-    \hyperlink{algo:#1}{\algo{#2\IfNoValueF{#3}{(#3)}}}%
-  }%
+	\IfNoValueTF{#1}{%
+		\hyperlink{algo:#2}{\algo{%
+				\StrSubstitute[0]{#2}{-}{-{\allowbreak}}%
+				\IfNoValueF{#3}{(#3)}}%
+		}%
+	}{%
+	\hyperlink{algo:#1}{\algo{#2\IfNoValueF{#3}{(#3)}}}%
+}%
 }
 
 % Code comments
@@ -412,6 +461,8 @@
 %% Theorems
 
 \newtheorem{lemma}{Lemma}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[section]
 \newtheorem{theorem}[lemma]{Theorem}
 \newtheorem{corollary}[lemma]{Corollary}
 \newtheorem{conjecture}[lemma]{Conjecture}
@@ -426,30 +477,30 @@
 
 %% Properties List
 \newenvironment{properties}{
-  \begin{compactenum}[(i)]
-  }{
-  \end{compactenum}
+	\begin{compactenum}[(i)]
+	}{
+\end{compactenum}
 }
 
 
 %% Lemma List
 \newenvironment{lemmalist}{
-  \begin{compactenum}[(a)]
-  }{
-  \end{compactenum}
+	\begin{compactenum}[(a)]
+	}{
+\end{compactenum}
 }
 % List of results
 \newenvironment{results}{
-  \begin{compactenum}[(a)]
-  }{
-  \end{compactenum}
+	\begin{compactenum}[(a)]
+	}{
+\end{compactenum}
 }
 
 %%%% List of definitions
 \newenvironment{definitions}{
-  \begin{compactitem}[$-$]
-  }{
-  \end{compactitem}
+	\begin{compactitem}[$-$]
+	}{
+\end{compactitem}
 }
 
 % List of cases
@@ -473,7 +524,7 @@
 %% Chapters
 \newcommand{\labelchapter}[1]{\label{chapter:#1}}
 \newcommand{\refchapter}[1]{\hyperref[chapter:#1]{Chapter
-    \ref*{chapter:#1}}}
+		\ref*{chapter:#1}}}
 
 %% Lemmas
 \newcommand{\labellemma}[1]{\label{lemma:#1}}
@@ -482,9 +533,9 @@
 %% Examples
 \newcommand{\labelexample}[1]{\label{example:#1}}
 \newcommand{\refexample}[1]{\hyperref[example:#1]{example
-    \ref*{example:#1}}}
+		\ref*{example:#1}}}
 \newcommand{\refexamples}[2]{\hyperref[example:#1]{examples
-    \ref*{example:#1} -- \ref*{example:#2}}}
+		\ref*{example:#1} -- \ref*{example:#2}}}
 
 %% Theorems
 \newcommand{\labeltheorem}[1]{\label{theorem:#1}}
@@ -517,21 +568,21 @@
 
 % New terms with links
 \DeclareDocumentCommand{\newterm}{o m}{%
-  \IfNoValueTF{#1}{%
-    % \label{def:#2}%
-    \hypertarget{def:#2}{\textit{#2}}%
-  }{%
-    % \label{def:#1}%%
-    \hypertarget{def:#1}{\textit{#2}}%
-  }%
+	\IfNoValueTF{#1}{%
+		% \label{def:#2}%
+		\hypertarget{def:#2}{\textit{#2}}%
+	}{%
+	% \label{def:#1}%%
+	\hypertarget{def:#1}{\textit{#2}}%
+}%
 }
 
 \DeclareDocumentCommand{\refterm}{o m}{%
-  \IfNoValueTF{#1}{%
-    \hyperlink{def:#2}{#2}%
-  }{%
-    \hyperlink{def:#1}{#2}%
-  }%
+	\IfNoValueTF{#1}{%
+		\hyperlink{def:#2}{#2}%
+	}{%
+	\hyperlink{def:#1}{#2}%
+}%
 }
 
 %%%% Number only this line
@@ -542,3 +593,9 @@
 % Editing notes
 \newcommand{\note}[1]{{\large\bfseries\ttfamily\color{red}#1}}
 \newcommand{\daniel}[1]{{\large\bfseries\ttfamily\color{blue}#1}}
+
+
+%% to add reference to a footnote
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
