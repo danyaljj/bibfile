@@ -98,6 +98,9 @@
 @STRING{ICML_2015= "Proc. 32st Int. Conf. Mach. Learning\CNFX{ICML}" }
 @STRING{ICML_2016= "Proc. 33nd Int. Conf. Mach. Learning\CNFX{ICML}" }
 @STRING{ICML_2017= "Proc. 34rd Int. Conf. Mach. Learning\CNFX{ICML}" }
+@STRING{COLING_2008= "Proc. 22nd Int. Conf. on Comput. Ling. \CNFX{COLING}" }
+@STRING{COLING_2016= "Proc. 26th Int. Conf. on Comp. Ling. \CNFX{COLING}" }
+
 @string{KDD_2013 = "Proc. 19th ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
 @string{KDD_2014 = "Proc. 20th ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
 @STRING{ITA		 = "Information Theory and Applications Workshop\CNFX{ITA}" }
@@ -134,10 +137,18 @@
 @string{akbc2016=" 5th" # akbc}
 
 @string{acl=" ACL"}
-'string{acl=" Annual Meeting of the Association for Computational Linguistics"}
+@string{acl=" Annual Meeting of the Association for Computational Linguistics"}
 @string{acl1989="27th" # acl}
 @string{acl2007="45th" # acl}
 @string{acl2014="52nd" # acl}
+
+@STRING{acl_2010="Proc. 48th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
+@STRING{acl_2011="Proc. 49th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
+@STRING{acl_2012="Proc. 50th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
+@STRING{acl_2013="Proc. 51st Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
+@STRING{acl_2014="Proc. 52nd Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
+@STRING{acl_2015="Proc. 53rd Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
+@STRING{acl_2016="Proc. 54th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
 
 @string{cacm="Communications of the ACM"}
 
@@ -1189,7 +1200,7 @@
 
 @article{clark-elementary-2015,
 	title={Elementary school science and math tests as a driver for {AI: Take the Aristo Challenge}},
-	author={Clark, Peter},
+	author={Clark, P.},
 	journal={Twenty-Seventh IAAI Conference},
 	year={2015}
 }
@@ -1199,8 +1210,14 @@
 	title = {Saul: Towards Declarative Learning Based Programming},
 	booktitle = IJCAI_2015,
 	month = {7},
-	year = {2015},
-	url = "http://cogcomp.cs.illinois.edu/papers/KordjamshidiRoWu15.pdf",
+	year = {2015}
+}
+
+@inproceedings{kordjamshidi2016better,
+    author = {P. Kordjamshidi and D. Khashabi and C. Christodoulopoulos and B. Mangipudi and S. Singh and Dan Roth },
+    title = {Better call Saul: Flexible Programming for Learning and Inference in NLP},
+    booktitle = {International Conference on Computational Linguistics (COLING)},
+    year = {2016}
 }
 
 @ARTICLE{andrews2010hidden,
@@ -4251,7 +4268,7 @@
 
 @article{turney2013distributional,
   title={Distributional semantics beyond words: Supervised learning of analogy and paraphrase},
-  author={Turney, Peter D},
+  author={Turney, P. D.},
   journal=tacl,
   volume={1},
   pages={353--366},
@@ -4303,15 +4320,6 @@
   pages={585-597}
 }
 
-@inproceedings{yih2014semantic,
-  author={Yih, Wen-tau and He, Xiaodong and Meek, Christopher},
-  title={Semantic Parsing for Single-Relation Question Answering.},
-  author={Yih, Wen{-}tau and He, Xiaodong and Meek, Christopher},
-  booktitle={ACL (2)},
-  pages={643--648},
-  year={2014}
-}
-
 @book{howell2012statistical,
   title={Statistical methods for psychology},
   author={Howell, David},
@@ -4335,14 +4343,14 @@
 
 @inproceedings{Kwok2001ScalingQA,
   title={Scaling question answering to the Web},
-  author={Cody C. T. Kwok and Oren Etzioni and Daniel S. Weld},
+  author={C. C. T. Kwok and O. Etzioni and D. S. Weld},
   booktitle={WWW},
   year={2001}
 }
 
 @misc{tableilp2016:arxiv,
   title={Question Answering via Integer Programming over Semi-Structured Knowledge (Extended Version)},
-  author={Daniel Khashabi and Tushar Khot and Ashish Sabharwal and Peter Clark and Oren Etzioni and Dan Roth},
+  author={D. Khashabi and T. Khot and A. Sabharwal and P. Clark and O. Etzioni and D. Roth},
   howpublished={Available at http://allenai.org/papers.html}, 
   year={2016}
 }
@@ -4350,14 +4358,14 @@
 
 @inproceedings{tableilp2016:ijcai,
   title={Question Answering via Integer Programming over Semi-Structured Knowledge (Extended Version)},
-  author={Daniel Khashabi and Tushar Khot and Ashish Sabharwal and Peter Clark and Oren Etzioni and Dan Roth},
+  author={D. Khashabi and T. Khot and A. Sabharwal and P. Clark and O. Etzioni and D. Roth},
   booktitle=ijcai_2016, 
   year={2016}
 }
 
 
 @inproceedings{khot:mln:emnlp,
-  author={Tushar Khot and Niranjan Balasubramanian and Eric Gribkoff and Ashish Sabharwal and Peter Clark and Oren Etzioni},
+  author={T. Khot and N. Balasubramanian and E. Gribkoff and A. Sabharwal and P. Clark and O. Etzioni},
   title={Exploring {M}arkov Logic Networks for Question Answering},
   booktitle=emnlp15,
   address={Lisbon, Portugal},
@@ -4392,7 +4400,7 @@
 }
 
 @inproceedings{aristo2015:challenge,
-  author    = {Peter Clark},
+  author    = {P. Clark},
   title     = {Elementary School Science and Math Tests as a Driver for {AI:} Take the {A}risto Challenge!},
   booktitle = {29th AAAI/IAAI},
   pages     = {4019-4021},
@@ -4402,7 +4410,7 @@
 
 @inproceedings{aristo2016:combining,
   title={Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions},
-  author={Peter Clark and Oren Etzioni and Tushar Khot and Ashish Sabharwal and Oyvind Tafjord and Peter Turney and Daniel Khashabi},
+  author={P. Clark and O. Etzioni and T. Khot and A. Sabharwal and O. Tafjord and P. Turney and D. Khashabi},
   booktitle=aaai2016,
   year={2016}
 }
@@ -4673,9 +4681,9 @@ year={2012}
   pages     = {1-41},
   year      = {2009}
 }
+
 @inproceedings{church1989,
-  author    = {Kenneth Ward Church and
-               Patrick Hanks},
+  author    = {K. W. Church and P. Hanks},
   title     = {Word Association Norms, Mutual Information and Lexicography},
   booktitle = acl1989,
   pages     = {76--83},
@@ -4848,8 +4856,7 @@ booktitle = {IJCAI-77}, year = 1977}
     title = {EDISON: Feature Extraction for NLP, Simplified},
     author = {Sammons, M. and Christodoulopoulos, C. and Kordjamshidi, P. and Khashabi, D. and Srikumar V. and Vijayakumar,  P. and Bokhari,  M. and  Wu, X. and Roth, D.},
     booktitle = lrec_2016,
-    year = {2016},
-    url = "http://cogcomp.cs.illinois.edu/papers/SCKKSVBWR16.pdf"
+    year = {2016}
 }
 
 
@@ -4932,18 +4939,9 @@ booktitle = {IJCAI-77}, year = 1977}
 
 @article{clark-elementary-2015,
 	title={Elementary school science and math tests as a driver for {AI: Take the Aristo Challenge}},
-	author={Clark, Peter},
+	author={Clark, P.},
 	journal={Twenty-Seventh IAAI Conference},
 	year={2015}
-}
-
-@inproceedings{kwr-saul-2015,
-	author = {P. Kordjamshidi and D. Roth and H. Wu},
-	title = {Saul: Towards Declarative Learning Based Programming},
-	booktitle = ijcai_2015,
-	month = {7},
-	year = {2015},
-	url = "http://cogcomp.cs.illinois.edu/papers/KordjamshidiRoWu15.pdf",
 }
 
 @ARTICLE{andrews2010hidden,
@@ -6829,7 +6827,7 @@ booktitle = {IJCAI-77}, year = 1977}
 
 @article{cekkstt-combiningSolvers-2016,
 	title={Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions},
-	author={Clark, Peter and Etzioni, Oren and \textbf{Khashabi}, \textbf{Daniel} and Khot, Tushar and Sabharwal, Ashish and Tafjord, Oyvind and Turney, Peter},
+	author={Clark, P. and Etzioni, O. and Khashabi, D. and Khot, T. and Sabharwal, A. and Tafjord, O. and Turney, P.},
 	booktitle = {Proceedings of The Conference on Artificial Intelligence (AAAI)},
 	organization = {AAAI Press}, 
 	year={2016}
@@ -7440,3 +7438,343 @@ booktitle = {IJCAI-77}, year = 1977}
 	publisher = {Elsevier}
 }
 
+@inproceedings{yao2014information,
+  title={Information Extraction over Structured Data: Question Answering with Freebase.},
+  author={Yao, Xuchen and Van Durme, Benjamin},
+  booktitle=acl_2014,
+  pages={956--966},
+  year={2014},
+  organization={Citeseer}
+}
+
+
+@inproceedings{yih2014semantic,
+  title={Semantic Parsing for Single-Relation Question Answering.},
+  author={Yih, W.-t. and He, X. and Meek, C.},
+  booktitle=acl_2014,
+  pages={643--648},
+  year={2014},
+  organization={Citeseer}
+}
+
+@book{manning2008introduction,
+  title={Introduction to information retrieval},
+  author={Manning, C. D. and Raghavan, P. and Sch{\"u}tze, H. and others},
+  year={2008},
+  publisher={Cambridge university press Cambridge}
+}
+
+
+@article{tymoshenko2016convolutional,
+      title={Convolutional Neural Networks vs. Convolution Kernels: Feature Engineering for Answer Sentence Reranking},
+      author={Tymoshenko, K. and Bonadiman, D. and Moschitti, A.},
+      year={2016}
+    }
+@article{fried2015higher-order,
+      title={Higher-order Lexical Semantic Models for Non-factoid Answer Reranking},
+      author={['Daniel Fried', 'Peter Jansen', 'Gustave Hahn-Powell', 'Mihai Surdeanu', 'Peter Clark']},
+      year={2015}
+    }
+@article{kocik2004question,
+      title={Question Classification using Maximum Entropy Models},
+      author={['Krystle Kocik']},
+      year={2004}
+    }
+@article{dror2011i,
+      title={I want to answer; who has a question?: Yahoo! answers recommender system},
+      author={['Gideon Dror', 'Yehuda Koren', 'Yoelle Maarek', 'Idan Szpektor']},
+      year={2011}
+    }
+@article{zhao2015crowd-selection,
+      title={Crowd-Selection Query Processing in Crowdsourcing Databases: A Task-Driven Approach},
+      author={['Zhou Zhao', 'Furu Wei', 'Ming Zhou', 'Weikeng Chen', 'Wilfred Ng']},
+      year={2015}
+    }
+@article{weston2015towards,
+      title={Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks},
+      author={['Jason Weston', 'Antoine Bordes', 'Sumit Chopra', 'Tomas Mikolov']},
+      year={2015}
+    }
+
+@article{yin2016attention-based,
+  title={Attention-based convolutional neural network for machine comprehension},
+  author={Yin, W. and Ebert, S. and Sch{\"u}tze, H.},
+  journal={arXiv preprint arXiv:1602.04341},
+  year={2016}
+}    
+    
+@article{burke1997question,
+      title={Question Answering from Frequently Asked Question Files: Experiences with the FAQ FINDER System},
+      author={['Robin D. Burke', 'Kristian J. Hammond', 'Vladimir A. Kulyukin', 'Steven L. Lytinen', 'Noriko Tomuro', 'Scott Schoenberg']},
+      year={1997}
+    }
+@article{hieber2011improved,
+      title={Improved answer ranking in social question-answering portals},
+      author={['Felix Hieber', 'Stefan Riezler']},
+      year={2011}
+    }
+@article{sachan2015learning,
+      title={Learning Answer-Entailing Structures for Machine Comprehension},
+      author={['Mrinmaya Sachan', 'Kumar Avinava Dubey', 'Eric P. Xing', 'Matthew Richardson']},
+      year={2015}
+    }
+@article{iyyer2015deep,
+      title={Deep Unordered Composition Rivals Syntactic Methods for Text Classification},
+      author={['Mohit Iyyer', 'Varun Manjunatha', 'Jordan L. Boyd-Graber', 'Hal Daumé']},
+      year={2015}
+    }
+@article{wang2010modeling,
+      title={Modeling Semantic Relevance for Question-Answer Pairs in Web Social Communities},
+      author={['Baoxun Wang', 'Xiaolong Wang', 'Chengjie Sun', 'Bingquan Liu', 'Lin Sun']},
+      year={2010}
+    }
+@article{grois2005learning,
+      title={Learning strategies for story comprehension: a reinforcement learning approach},
+      author={['Eugene Grois', 'David C. Wilkins']},
+      year={2005}
+    }
+@article{kouchnir2004a,
+      title={A Machine Learning Approach To German Pronoun Resolution},
+      author={['Beata Kouchnir']},
+      year={2004}
+    }
+@article{krishnan2005enhanced,
+      title={Enhanced Answer Type Inference from Questions using Sequential Models},
+      author={['Vijay Krishnan', 'Sujatha Das Gollapalli', 'Soumen Chakrabarti']},
+      year={2005}
+    }
+@article{voorhees2001overview,
+      title={Overview of the TREC 2002 Question Answering Track},
+      author={['Ellen M. Voorhees']},
+      year={2001}
+    }
+@article{wang2011deep,
+      title={Deep Learning Approaches to Semantic Relevance Modeling for Chinese Question-Answer Pairs},
+      author={['Baoxun Wang', 'Bingquan Liu', 'Xiaolong Wang', 'Chengjie Sun', 'Deyuan Zhang']},
+      year={2011}
+    }
+@article{wang2010cheap,
+      title={Cheap Facts and Counter-Facts},
+      author={['Rui Wang', 'Chris Callison-Burch']},
+      year={2010}
+    }
+@article{abacha2012medical,
+      title={Medical question answering: translating medical questions into sparql queries},
+      author={['Asma Ben Abacha', 'Pierre Zweigenbaum']},
+      year={2012}
+    }
+@article{fader2014open,
+      title={Open question answering over curated and extracted knowledge bases},
+      author={['Anthony Fader', 'Luke S. Zettlemoyer', 'Oren Etzioni']},
+      year={2014}
+    }
+@article{yin2016neural,
+      title={Neural Generative Question Answering},
+      author={['Jun Yin', 'Xin Jiang', 'Zhengdong Lu', 'Lifeng Shang', 'Hang Li', 'Xiaoming Li']},
+      year={2016}
+    }
+@article{ray2016question,
+      title={Question Relevance in VQA: Identifying Non-Visual And False-Premise Questions},
+      author={['Arijit Ray', 'Gordon Christie', 'Mohit Bansal', 'Dhruv Batra', 'Devi Parikh']},
+      year={2016}
+    }
+@article{zhou2012a,
+      title={A Data-Driven Approach to Question Subjectivity Identification in Community Question Answering},
+      author={['Tom Chao Zhou', 'Xiance Si', 'Edward Y. Chang', 'Irwin King', 'Michael R. Lyu']},
+      year={2012}
+    }
+@article{bordes2015large-scale,
+      title={Large-scale Simple Question Answering with Memory Networks},
+      author={['Antoine Bordes', 'Nicolas Usunier', 'Sumit Chopra', 'Jason Weston']},
+      year={2015}
+    }
+@article{dong2015question,
+      title={Question Answering over Freebase with Multi-Column Convolutional Neural Networks},
+      author={Dong, Li and Wei, Furu and Zhou, Ming and Xu, Ke},
+      year={2015}
+    }
+@article{fader2013paraphrase-driven,
+      title={Paraphrase-Driven Learning for Open Question Answering},
+      author={['Anthony Fader', 'Luke S. Zettlemoyer', 'Oren Etzioni']},
+      year={2013}
+    }
+@article{qu2012an,
+      title={An evaluation of classification models for question topic categorization},
+      author={['Bo Qu', 'Gao Cong', 'Cuiping Li', 'Aixin Sun', 'Hong Chen']},
+      year={2012}
+    }
+@article{silva2011from,
+      title={From symbolic to sub-symbolic information in question classification},
+      author={['João Pedro Carlos Gomes da Silva', 'Luísa Coheur', 'Ana Cristina Mendes', 'Andreas Wichert']},
+      year={2011}
+    }
+@article{balikas2015results,
+      title={Results of the BioASQ Tasks of the Question Answering Lab at CLEF 2015},
+      author={['Georgios Balikas', 'Aris Kosmopoulos', 'Anastasia Krithara', 'Georgios Paliouras', 'Ioannis A. Kakadiaris']},
+      year={2015}
+    }
+@article{koehn2006manual,
+      title={Manual And Automatic Evaluation Of Machine Translation Between European Languages},
+      author={['Philipp Koehn', 'Christof Monz']},
+      year={2006}
+    }
+@article{unger2012template-based,
+      title={Template-based question answering over RDF data},
+      author={['Christina Unger', 'Lorenz Bühmann', 'Jens Lehmann', 'Axel-Cyrille Ngonga Ngomo', 'Daniel Gerber', 'Philipp Cimiano']},
+      year={2012}
+    }
+@article{malinowski2014towards,
+      title={Towards a Visual Turing Challenge},
+      author={['Mateusz Malinowski', 'Mario Fritz']},
+      year={2014}
+    }
+    
+@article{pinchak2009flexible,
+      title={Flexible Answer Typing with Discriminative Preference Ranking},
+      author={['Christopher Pinchak', 'Dekang Lin', 'Davood Rafiei']},
+      year={2009}
+    }
+    
+@article{chu-carroll2003in,
+      title={In Question Answering, Two Heads Are Better Than One},
+      author={['Jennifer Chu-Carroll', 'Krzysztof Czuba', 'John M. Prager', 'Abraham Ittycheriah']},
+      year={2003}
+    }
+@article{lui2012langid.py:,
+      title={langid.py: An Off-the-shelf Language Identification Tool},
+      author={['Marco Lui', 'Timothy Baldwin']},
+      year={2012}
+    }
+
+@inproceedings{Wang2016InnerAB,
+  title={Inner Attention based Recurrent Neural Networks for Answer Selection},
+  author={B. Wang and K. Liu and J. Zhao},
+  booktitle={ACL},
+  year={2016}
+}
+    
+@inproceedings{li2008classifying,
+      title={Classifying What-Type Questions by Head Noun Tagging},
+      author={Li, F. and Zhang, X. and Yuan, J. and Zhu, X.},
+      booktitle=COLING_2008,
+      year={2007}
+    }
+    
+@inproceedings{Li2002QuestionClassifier,
+ author = {Li, X. and Roth, D.},
+ title = {Learning Question Classifiers},
+ booktitle = {Proceedings of the 19th International Conference on Computational Linguistics - Volume 1},
+ series = {COLING '02},
+ year = {2002},
+ location = {Taipei, Taiwan},
+ pages = {1--7},
+ numpages = {7},
+ publisher = {Association for Computational Linguistics},
+ address = {Stroudsburg, PA, USA},
+} 
+    
+@article{ji2013learning,
+      title={Learning to rank for question routing in community question answering},
+      author={['Zongcheng Ji', 'Bin Wang']},
+      year={2013}
+    }
+    
+@article{liu2011toward,
+      title={Toward automated consumer question answering: Automatically separating consumer questions from professional questions in the healthcare domain},
+      author={['Feifan Liu', 'Lamont D. Antieau', 'Hong Yu']},
+      year={2011}
+    }
+    
+@article{wang2000a,
+      title={A Question Answering System Developed As A Project In A Natural Language Processing Course},
+      author={['Wen Wang', 'John Auer', 'Ram Parasuraman', 'Irine Zubarev', 'David Brandyberry', 'Mary P. Harper']},
+      year={2000}
+    }
+    
+@article{takechi1993chunking-based,
+      title={Chunking-based Question Type Identification for Multi-sentence Queries},
+      author={['Mineki Takechi', 'Takenobu Tokunaga', 'Yuji Matsumoto']},
+      year={1993}
+    }
+    
+@article{wang2015faq-based,
+      title={FAQ-based Question Answering via Word Alignment},
+      author={['Zhiguo Wang', 'Abraham Ittycheriah']},
+      year={2015}
+    }
+    
+@article{lita2004unsupervised,
+      title={Unsupervised question answering data acquisition from local corpora},
+      author={['Lucian Vlad Lita', 'Jaime G. Carbonell']},
+      year={2004}
+    }
+    
+@article{voorhees2005using,
+      title={Using Question Series to Evaluate Question Answering System Effectiveness},
+      author={['Ellen M. Voorhees']},
+      year={2005}
+    }
+    
+@article{yu2007a,
+      title={A Cognitive Evaluation of Four Online Search Engines for Answering Definitional Questions Posed by Physicians},
+      author={['Hong Yu', 'David Kaufman']},
+      year={2007}
+    }
+    
+@article{weston2016dialog-based,
+      title={Dialog-based Language Learning},
+      author={['Jason Weston']},
+      year={2016}
+    }
+    
+@article{heinz2010computational,
+      title={Computational Theories of Learning and Developmental Psycholinguistics},
+      author={['Jeffrey Heinz']},
+      year={2010}
+    }
+    
+@article{lita2005qualitative,
+      title={Qualitative Dimensions in Question Answering: Extending the Definitional QA Task},
+      author={['Lucian Vlad Lita', 'Andrew Hazen Schlaikjer', 'WeiChang Hong', 'Eric Nyberg']},
+      year={2005}
+    }
+    
+@article{bohnet2010top,
+      title={Top Accuracy and Fast Dependency Parsing is not a Contradiction},
+      author={['Bernd Bohnet']},
+      year={2010}
+    }
+    
+@article{tú2005named,
+      title={Named Entity Recognition in Vietnamese Free-text and Web Documents Using Conditional Random Fields},
+      author={['Nguyễn Cẩm Tú', 'Trần Thị Oanh', 'Phan Xuân Hiếu', 'Hà Quang Thụy']},
+      year={2005}
+    }
+    
+@article{bian2008a,
+      title={A few bad votes too many?: towards robust ranking in social media},
+      author={['Jiang Bian', 'Yandong Liu', 'Eugene Agichtein', 'Hongyuan Zha']},
+      year={2008}
+    }
+    
+@article{brown1992class,
+  title={Class-based n-gram models of natural language},
+  author={Brown, P. F. and Desouza, P. V. and Mercer, R. L. and Pietra, V. J. D. and Lai, J. C.},
+  journal={Computational linguistics},
+  volume={18},
+  number={4},
+  pages={467--479},
+  year={1992},
+  publisher={MIT Press}
+}
+
+@inproceedings{de2006generating,
+  title={Generating typed dependency parses from phrase structure parses},
+  author={De Marneffe, M.-C. and MacCartney, B. and Manning, C. D. and others},
+  booktitle={Proceedings of LREC},
+  volume={6},
+  number={2006},
+  pages={449--454},
+  year={2006},
+  organization={Genoa}
+}
