@@ -36,8 +36,4 @@ jobs:
           echo 'validate the format'
           python src/test.py 
           
-      - name: try exporting as html 
-        run: |
-          echo 'try exporting as html '
-          pybtex-format ref.bib  ref.html
 
