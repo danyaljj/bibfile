@@ -58,11 +58,11 @@ jobs:
         # uses: zwaldowski/git-commit-action@66730766679672410dc04830ae6389f4376c8c94
         uses: zwaldowski/git-commit-action@v1
         with:
-          working_directory: .
+          working_directory: ref.bib
           commit_message: 🤖automated commit!!🤖 committing the file after tidying up!
           author_name: github
           author_email: danyal.khashabi@gmail.com
-
+        run: echo "${{ steps.git_commit.outputs.sha }}"
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           # The arguments for the `git add` command (see the paragraph below for more info)
