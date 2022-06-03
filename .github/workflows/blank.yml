@@ -62,7 +62,7 @@ jobs:
           commit_message: 🤖automated commit!!🤖 committing the file after tidying up!
           author_name: github
           author_email: danyal.khashabi@gmail.com
-        run: echo "${{ steps.git_commit.outputs.sha }}"
+      - run: echo "${{ steps.git_commit.outputs.sha }}"
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           # The arguments for the `git add` command (see the paragraph below for more info)
