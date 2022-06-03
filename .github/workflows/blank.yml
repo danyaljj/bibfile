@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
 
       # this Action should follow steps to set up Python build environment
       - name: Install Python dependencies
@@ -35,5 +38,10 @@ jobs:
         run: |
           echo 'validate the format'
           python src/test.py 
+          
+      - name: install tidy 
+        run: |
+          echo 'install tidy'
+          npm install -g bibtex-tidy
           
 
