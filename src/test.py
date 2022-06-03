@@ -10,7 +10,7 @@ for entry in bib_data.entries.keys():
     print(f" * {entry} -> {author}")
 
     # TODO: bib entry name should not have "-"
-    assert "-" not in entry, entry
+    # assert "-" not in entry, entry
 
     # TODO: bib entry name should have first author name
     # TODO: bib entry name should have publication year
