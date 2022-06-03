@@ -43,9 +43,18 @@ jobs:
         run: |
           echo 'install tidy'
           npm install -g bibtex-tidy
-
           
       - name: tidy up!  
         run: |
           echo 'tidy up!'
           bibtex-tidy --tab --align=13 --generate-keys  --remove-dupe-fields  --trailing-commas   --sort-fields=title,shorttitle,author,year,month,day,journal,booktitle,location,on,publisher,address,series,volume,number,pages,doi,isbn,issn,url,urldate,copyright,category,note,metadata  --sort=year,title,author,key ref.bib
+
+      - name: commit the results
+        # You may pin to the exact commit or the version.
+        # uses: zwaldowski/git-commit-action@66730766679672410dc04830ae6389f4376c8c94
+        uses: zwaldowski/git-commit-action@v1
+        with:
+          working_directory: .
+          commit_message: 🤖automated commit!!🤖 committing the file after tidying up!
+          author_name: github
+          author_email: danyal.khashabi@gmail.com
