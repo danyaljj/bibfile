@@ -31,8 +31,9 @@ jobs:
         with:
           path: "src/requirements.txt"
         
-      # Runs a set of commands using the runners shell
-      - name: test task formats. 
+      - name: validate the format 
         run: |
-          echo 'testing and validate the files'
+          echo 'validate the format'
           python src/test.py 
+          
+
