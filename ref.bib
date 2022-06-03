@@ -1,180 +1,52 @@
 %%%%%%%%%%%%%%% CONFERENCE NAMES / ACRONYMS %%%%%%%%%%%%%%%
 
-@PREAMBLE{ "\providecommand{\CNFX}[1]{ {\em{\textrm{(#1)}}}}" }
-@PREAMBLE{ "\providecommand{\CNFSoCG}{\CNFX{SoCG}}" }
-@PREAMBLE{ "\providecommand{\CNFCCCG}{\CNFX{CCCG}}" }
-@PREAMBLE{ "\providecommand{\CNFFOCS}{\CNFX{FOCS}}" }
-@PREAMBLE{ "\providecommand{\CNFSODA}{\CNFX{SODA}}" }
-@PREAMBLE{ "\providecommand{\CNFSTOC}{\CNFX{STOC}}" }
-@PREAMBLE{ "\providecommand{\CNFPODS}{\CNFX{PODS}}" }
-@PREAMBLE{ "\providecommand{\CNFISAAC}{\CNFX{ISAAC}}" }
-@PREAMBLE{ "\providecommand{\CNFFSTTCS}{\CNFX{FSTTCS}}" }
-@PREAMBLE{ "\providecommand{\CNFIJCAI}{\CNFX{IJCAI}}" }
-@PREAMBLE{ "\providecommand{\CNFBROADNETS}{\CNFX{BROADNETS}}" }
-@PREAMBLE{ "\providecommand{\CNFCCC}{\CNFX{CCC}}" }
-@PREAMBLE{ "\providecommand{\CNFECCC}{\CNFX{ECCC}}" }
-@PREAMBLE{ "\providecommand{\CNFEC}{\CNFX{EC}}" }
-@PREAMBLE{ "\providecommand{\CNFITCS}{\CNFX{ITCS}}" }
-@PREAMBLE{ "\providecommand{\CNFIPCO}{\CNFX{IPCO}}" }
-@PREAMBLE{ "\providecommand{\CNFKDD}{\CNFX{KDD}}" }
-@PREAMBLE{ "\providecommand{\CNFLICS}{\CNFX{LICS}}" }
-@PREAMBLE{ "\providecommand{\CNFEC}{\CNFX{EC}}" }
-@PREAMBLE{ "\providecommand{\CNFICALP}{\CNFX{ICALP}}" }
-@PREAMBLE{ "\providecommand{\CNFESA}{\CNFX{ESA}}" }
-
-@STRING{COLT_2003="Proc. 16th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2004="Proc. 17th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2005="Proc. 18th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2006="Proc. 19th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2007="Proc. 20th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2008="Proc. 21st Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2009="Proc. 22nd Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2010="Proc. 23rd Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2011="Proc. 24th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2012="Proc. 25th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2013="Proc. 26th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2014="Proc. 27th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2015="Proc. 28th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{COLT_2016="Proc. 29th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{SODA_2011="Proceed. 22nd ACM-SIAM symposium on Discrete Algorithms\CNFX{SODA}"}
-@STRING{STOC_2002="Proc. 24th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2003="Proc. 25th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2004="Proc. 26th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2005="Proc. 27th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2006="Proc. 28th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2007="Proc. 29th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2008="Proc. 30th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2009="Proc. 31st ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2010="Proc. 32nd ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2011="Proc. 33th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2012="Proc. 34th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2013="Proc. 35th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2014="Proc. 36th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2015="Proc. 37th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2016="Proc. 38th ACM symposium on Theory of computing\CNFX{STOC}"}
-@STRING{STOC_2017="Proc. 39th ACM symposium on Theory of computing\CNFX{STOC}"}
-@string{JMLR      = "J. Mach. Learn. Research"}
+@string{iclr="International Conference on Learning Representations \CNFX{ICLR}"}
+@string{icml="International Conference on Machine Learning \CNFX{ICML}"}
+@string{naacl="Conference of the North American Chapter of the Association for Computational Linguistics \CNFX{NAACL}"}
+@string{tacl="Transactions of the Association for Computational Linguistics \CNFX{TACL}"}
+@string{emnlp="Conference on Empirical Methods in Natural Language Processing \CNFX{EMNLP}"}
+@string{acl="Annual Meeting of the Association for Computational Linguistics \CNFX{ACL}"}
+@STRING{conll= "SIGNLL Conference on Natural Language Learning \CNFX{CoNLL}" }
+@string{jmlr = "Journal of Machine Learning Research \CNFX{JMLR}"}
+@STRING{eacl= "Conference of the European Chapter of the Association for Computational Linguistics \CNFX{EACL}" }
+@string{aaai="Conference on Artificial Intelligence \CNFX{AAAI}"}
+@string{nips = "Advances in Neural Information Processing Systems \CNFX{NourIPS}"}
+@string{ijcai="International Joint Conferences on Artificial Intelligence \CNFX{IJCAI}"}
+@string{acml="Asian Conference on Machine Learning \CNFX{ACML}"}
+@string{ssem="Joint Conference on Lexical and Computational Semantics \CNFX{*SEM}"}
+@string{www="International World Wide Web Conference \CNFX{WWW}"}
+@string{iccg="International Conference on Computers and Games \CNFX{ICCG}"}
+@string{pnas="Proceedings of the National Academy of Sciences \CNFX{PNAS}"}
+@string{sat="International Conference on Theory and Applications of Satisfiability Testing \CNFX{SAT}"}
+@string{cvpr="IEEE Conference on Computer Vision and Pattern Recognition \CNFX{CVPR}"}
+@STRING{COLT="Proc. 16th Conf. on Learning Theory\CNFX{COLT}"}
+@STRING{STOC="Proc. 39th ACM symposium on Theory of computing\CNFX{STOC}"}
 @string{ALGORITHMICA = "Algorithmica"}
-@STRING{FTML	  = "Found. Trends Mach. Learn." }
-@string{JACM   	  = "J. Assoc. Comput. Mach."}
-@string{NIPS_2000 = "Adv. Neural Info. Proc. Sys. 13\CNFX{NIPS}"}
-@string{NIPS_2001 = "Adv. Neural Info. Proc. Sys. 14\CNFX{NIPS}"}
-@string{NIPS_2002 = "Adv. Neural Info. Proc. Sys. 15\CNFX{NIPS}"}
-@string{NIPS_2003 = "Adv. Neural Info. Proc. Sys. 16\CNFX{NIPS}"}
-@string{NIPS_2004 = "Adv. Neural Info. Proc. Sys. 17\CNFX{NIPS}"}
-@string{NIPS_2005 = "Adv. Neural Info. Proc. Sys. 18\CNFX{NIPS}"}
-@string{NIPS_2006 = "Adv. Neural Info. Proc. Sys. 19\CNFX{NIPS}"}
-@string{NIPS_2007 = "Adv. Neural Info. Proc. Sys. 20\CNFX{NIPS}"}
-@string{NIPS_2008 = "Adv. Neural Info. Proc. Sys. 21\CNFX{NIPS}"}
-@string{NIPS_2009 = "Adv. Neural Info. Proc. Sys. 22\CNFX{NIPS}"}
-@string{NIPS_2010 = "Adv. Neural Info. Proc. Sys. 23\CNFX{NIPS}"}
-@string{NIPS_2011 = "Adv. Neural Info. Proc. Sys. 24\CNFX{NIPS}"}
-@string{NIPS_2012 = "Adv. Neural Info. Proc. Sys. 25\CNFX{NIPS}"}
-@string{NIPS_2013 = "Adv. Neural Info. Proc. Sys. 26\CNFX{NIPS}"}
-@string{NIPS_2014 = "Adv. Neural Info. Proc. Sys. 27\CNFX{NIPS}"}
-@string{NIPS_2015 = "Adv. Neural Info. Proc. Sys. 28\CNFX{NIPS}"}
-@string{NIPS_2016 = "Adv. Neural Info. Proc. Sys. 29\CNFX{NIPS}"}
-@STRING{ICML_1994= "Proc. 11th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_1995= "Proc. 12th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_1996= "Proc. 13th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_1997= "Proc. 14th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_1998= "Proc. 15th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_1999= "Proc. 16th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2000= "Proc. 17th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2001= "Proc. 18th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2002= "Proc. 19th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2003= "Proc. 20th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2004= "Proc. 21st Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2005= "Proc. 22nd Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2006= "Proc. 23th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2007= "Proc. 24th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2008= "Proc. 25th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2009= "Proc. 26th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2010= "Proc. 27th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2011= "Proc. 28th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2012= "Proc. 29th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2013= "Proc. 30th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2014= "Proc. 31th Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2015= "Proc. 32st Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2016= "Proc. 33nd Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{ICML_2017= "Proc. 34rd Int. Conf. Mach. Learning\CNFX{ICML}" }
-@STRING{COLING_2008= "Proc. 22nd Int. Conf. on Comput. Ling. \CNFX{COLING}" }
-@STRING{COLING_2016= "Proc. 26th Int. Conf. on Comp. Ling. \CNFX{COLING}" }
-
-@string{KDD_2013 = "Proc. 19th ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
-@string{KDD_2014 = "Proc. 20th ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
-@STRING{ITA		 = "Information Theory and Applications Workshop\CNFX{ITA}" }
-@STRING{JCSS	 = "J. Comput. Sys. Sci." }
-@string{MLJ 	 = "Mach. Learn. J."}
-@string{MPROG    = "Math. Prog."}
-@string{SIOPT    = "SIAM J. Optim."}
-@STRING{ORL	     = "Oper. Res. Lett." }
-@string{WWW_2009 = "Proceedings of the 19th international conference on WORLd Wide Web\CNFX{WWW}"}
+@STRING{FTML= "Found. Trends Mach. Learn." }
+@string{JACM= "J. Assoc. Comput. Mach."}
+@STRING{COLING= "Proc. 26th Int. Conf. on Comp. Ling. \CNFX{COLING}" }
+@string{KDD = "Proc. ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
+@STRING{ITA= "Information Theory and Applications Workshop\CNFX{ITA}" }
+@STRING{JCSS= "J. Comput. Sys. Sci." }
+@string{MLJ = "Mach. Learn. J."}
+@string{MPROG= "Math. Prog."}
+@string{SIOPT= "SIAM J. Optim."}
+@STRING{ORL= "Oper. Res. Lett." }
+@string{WWW = "Proceedings of the international conference on WORLd Wide Web\CNFX{WWW}"}
 @string{SICOMP = "SIAM Journal on Computing \CNFX{SICOMP}"}
-@STRING{IJCAI_2012="Proc. 21st Int. Joint Conf. on Artificial Intelligence\CNFX{IJCAI}"}
-@STRING{IJCAI_2013="Proc. 22nd Int. Joint Conf. on Artificial Intelligence\CNFX{IJCAI}"}
-@STRING{IJCAI_2014="Proc. 23rd Int. Joint Conf. on Artificial Intelligence\CNFX{IJCAI}"}
-@STRING{IJCAI_2015="Proc. 24th Int. Joint Conf. on Artificial Intelligence\CNFX{IJCAI}"}
-@STRING{IJCAI_2016="Proc. 25th Int. Joint Conf. on Artificial Intelligence\CNFX{IJCAI}"}
-@STRING{aaai_2013="Proc. 27th Conf. on Artificial Intelligence \CNFX{AAAI}"}
-@STRING{aaai_2014="Proc. 28th Conf. on Artificial Intelligence \CNFX{AAAI}"}
-@STRING{aaai_2015="Proc. 29th Conf. on Artificial Intelligence \CNFX{AAAI}"}
-@STRING{aaai_2016="Proc. 30th Conf. on Artificial Intelligence \CNFX{AAAI}"}
-@string{IEEE-IT 	 = "{IEEE} Trans. on Info. Theory"}
-@string{clt 	 = "Comp. Learning Theory"}
-@string{alt 	 = "Alg. Learning Theory"}
-@STRING{lrec_2016="Proc. of the 10th International Conference on Language Resources and Evaluation \CNFX{LREC}"}
-@string{aaai=" AAAI"}
-@string{aaai2006="21st" # aaai}
-@string{aaai2012="26th" # aaai}
-@string{aaai2013="27th" # aaai}
-@string{aaai2014="28th" # aaai}
-@string{aaai2015="29th" # aaai}
-@string{aaai2016="30th" # aaai}
-
+@string{iit= "{IEEE} Trans. on Info. Theory"}
+@string{clt= "Comp. Learning Theory"}
+@string{alt= "Alg. Learning Theory"}
+@STRING{lrec="Proc. of the 10th International Conference on Language Resources and Evaluation \CNFX{LREC}"}
 @string{akbc=" AKBC Workshop"}
-@string{akbc2014=" 4th" # akbc}
-@string{akbc2016=" 5th" # akbc}
-
-@string{acl=" ACL"}
-@string{acl=" Annual Meeting of the Association for Computational Linguistics"}
-@string{acl1989="27th" # acl}
-@string{acl2007="45th" # acl}
-@string{acl2014="52nd" # acl}
-
-@STRING{acl_2010="Proc. 48th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-@STRING{acl_2011="Proc. 49th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-@STRING{acl_2012="Proc. 50th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-@STRING{acl_2013="Proc. 51st Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-@STRING{acl_2014="Proc. 52nd Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-@STRING{acl_2015="Proc. 53rd Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-@STRING{acl_2016="Proc. 54th Annual Meeting of the Ass. for Comp. Linguistics \CNFX{ACL}"}
-
 @string{cacm="Communications of the ACM"}
-
-@string{emnlp=" EMNLP"}
-@string{emnlp14="2014" # emnlp}
-@string{emnlp15="2015" # emnlp}
-
 @string{icdm=" ICDM"}
-@string{icdm2006="6th" # icdm}
-
-@string{ijcai=" IJCAI"}
-@string{ijcai2005=" 19th" # ijcai}
-@string{ijcai2009=" 21st" # ijcai}
-
 @string{science="Science"}
+@string{interspeech="Annual Conference of the International Speech Communication Association(INTERSPEECH)"}
 
-@string{interspeech10="INTERSPEECH"}
-'string{interspeech10="11th Annual Conference of the International Speech Communication Association(INTERSPEECH)"}
 
-@string{iclr="ICLR"}
+@PREAMBLE{"\providecommand{\CNFX}[1]{{\em{\textrm{(#1)}}}}" }
 
-@string{naacl=" NAACL"}
-
-@string{tacl=" TACL"}
-
-@STRING{CONLL= "Proc. of the SIGNLL Conference on Natural Language Learning\CNFX{CoNLL}" }
 
 @inproceedings{	ab-ojdl-14,
 	title =        {Optimal Jamming using Delayed Learning},
