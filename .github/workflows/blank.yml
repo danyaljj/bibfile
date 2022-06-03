@@ -47,7 +47,7 @@ jobs:
       - name: tidy up!  
         run: |
           echo 'tidy up!'
-          bibtex-tidy --tab --align=13 --generate-keys  --remove-dupe-fields  --trailing-commas   --sort-fields=title,shorttitle,author,year,month,day,journal,booktitle,location,on,publisher,address,series,volume,number,pages,doi,isbn,issn,url,urldate,copyright,category,note,metadata  --sort=year,title,author,key ref.bib
+          bibtex-tidy --tab --align=13 --generate-keys  --remove-dupe-fields  --numeric  --trailing-commas   --sort-fields=title,shorttitle,author,year,month,day,journal,booktitle,location,on,publisher,address,series,volume,number,pages,doi,isbn,issn,url,urldate,copyright,category,note,metadata  --sort=year,title,author,key ref.bib
 
       - name: git status
         run: |
