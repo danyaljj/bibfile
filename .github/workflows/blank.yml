@@ -49,6 +49,10 @@ jobs:
           echo 'tidy up!'
           bibtex-tidy --tab --align=13 --generate-keys  --remove-dupe-fields  --trailing-commas   --sort-fields=title,shorttitle,author,year,month,day,journal,booktitle,location,on,publisher,address,series,volume,number,pages,doi,isbn,issn,url,urldate,copyright,category,note,metadata  --sort=year,title,author,key ref.bib
 
+      - name: git status
+        run: |
+          git status
+
       - name: commit the results
         # You may pin to the exact commit or the version.
         # uses: zwaldowski/git-commit-action@66730766679672410dc04830ae6389f4376c8c94
