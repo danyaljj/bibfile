@@ -6,11 +6,11 @@
 @string{tacl="Transactions of the Association for Computational Linguistics \CNFX{TACL}"}
 @string{emnlp="Conference on Empirical Methods in Natural Language Processing \CNFX{EMNLP}"}
 @string{acl="Annual Meeting of the Association for Computational Linguistics \CNFX{ACL}"}
-@STRING{conll= "SIGNLL Conference on Natural Language Learning \CNFX{CoNLL}" }
-@string{jmlr = "Journal of Machine Learning Research \CNFX{JMLR}"}
-@STRING{eacl= "Conference of the European Chapter of the Association for Computational Linguistics \CNFX{EACL}" }
+@string{conll="SIGNLL Conference on Natural Language Learning \CNFX{CoNLL}" }
+@string{jmlr="Journal of Machine Learning Research \CNFX{JMLR}"}
+@string{eacl= "Conference of the European Chapter of the Association for Computational Linguistics \CNFX{EACL}" }
 @string{aaai="Conference on Artificial Intelligence \CNFX{AAAI}"}
-@string{nips = "Advances in Neural Information Processing Systems \CNFX{NourIPS}"}
+@string{nips ="Advances in Neural Information Processing Systems \CNFX{NourIPS}"}
 @string{ijcai="International Joint Conferences on Artificial Intelligence \CNFX{IJCAI}"}
 @string{acml="Asian Conference on Machine Learning \CNFX{ACML}"}
 @string{ssem="Joint Conference on Lexical and Computational Semantics \CNFX{*SEM}"}
@@ -19,16 +19,16 @@
 @string{pnas="Proceedings of the National Academy of Sciences \CNFX{PNAS}"}
 @string{sat="International Conference on Theory and Applications of Satisfiability Testing \CNFX{SAT}"}
 @string{cvpr="IEEE Conference on Computer Vision and Pattern Recognition \CNFX{CVPR}"}
-@STRING{COLT="Proc. 16th Conf. on Learning Theory\CNFX{COLT}"}
-@STRING{STOC="Proc. 39th ACM symposium on Theory of computing\CNFX{STOC}"}
-@string{ALGORITHMICA = "Algorithmica"}
+@STRING{colt="Proc. 16th Conf. on Learning Theory\CNFX{COLT}"}
+@STRING{stoc="Proc. 39th ACM symposium on Theory of computing\CNFX{STOC}"}
+@string{ALGORITHMICA="Algorithmica"}
 @STRING{FTML= "Found. Trends Mach. Learn." }
-@string{JACM= "J. Assoc. Comput. Mach."}
-@STRING{COLING= "Proc. 26th Int. Conf. on Comp. Ling. \CNFX{COLING}" }
-@string{KDD = "Proc. ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
+@string{JACM="J. Assoc. Comput. Mach."}
+@STRING{coling= "Proc. 26th Int. Conf. on Comp. Ling. \CNFX{COLING}" }
+@string{ldd = "Proc. ACM Conf. Knowl. Disc. and Data Mining\CNFKDD"}
 @STRING{ITA= "Information Theory and Applications Workshop\CNFX{ITA}" }
 @STRING{JCSS= "J. Comput. Sys. Sci." }
-@string{MLJ = "Mach. Learn. J."}
+@string{mlj = "Machine Learning Journal"}
 @string{MPROG= "Math. Prog."}
 @string{SIOPT= "SIAM J. Optim."}
 @STRING{ORL= "Oper. Res. Lett." }
@@ -37,12 +37,12 @@
 @string{iit= "{IEEE} Trans. on Info. Theory"}
 @string{clt= "Comp. Learning Theory"}
 @string{alt= "Alg. Learning Theory"}
-@STRING{lrec="Proc. of the 10th International Conference on Language Resources and Evaluation \CNFX{LREC}"}
+@string{lrec="International Conference on Language Resources and Evaluation \CNFX{LREC}"}
 @string{akbc=" AKBC Workshop"}
 @string{cacm="Communications of the ACM"}
 @string{icdm=" ICDM"}
 @string{science="Science"}
-@string{interspeech="Annual Conference of the International Speech Communication Association(INTERSPEECH)"}
+@string{interspeech="Annual Conference of the International Speech Communication Association \CNFX{INTERSPEECH}"}
 
 
 @PREAMBLE{"\providecommand{\CNFX}[1]{{\em{\textrm{(#1)}}}}" }
@@ -1394,13 +1394,8 @@ publisher={MIT Press}
     title = "A Call for Clarity in Reporting {BLEU} Scores",
     author = "Post, Matt",
     booktitle = "Proc.\ of WMT",
-    _month = oct,
     year = "2018",
-    _address = "Brussels, Belgium",
-    _publisher = "Association for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/W18-6319",
-    _doi = "10.18653/v1/W18-6319",
-    _pages = "186--191",
     abstract = "The field of machine translation faces an under-recognized problem because of inconsistency in the reporting of scores from its dominant metric. Although people refer to {``}the{''} BLEU score, BLEU is in fact a parameterized metric whose values can vary wildly with changes to these parameters. These parameters are often not reported or are hard to find, and consequently, BLEU scores between papers cannot be directly compared. I quantify this variation, finding differences as high as 1.8 between commonly used configurations. The main culprit is different tokenization and normalization schemes applied to the reference. Pointing to the success of the parsing community, I suggest machine translation researchers settle upon the BLEU scheme used by the annual Conference on Machine Translation (WMT), which does not allow for user-supplied reference processing, and provide a new tool, SACREBLEU, to facilitate this.",
 }
 
@@ -2335,7 +2330,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 	title =        {Estimation, Optimization, and Parallelism when Data
 	is Sparse},
 	author =       {J. Duchi and M.I. Jordan and B. McMahan},
-	booktitle =    nips_2013,
+	booktitle =    nips,
 	pages =        {2832--2840},
 	year =         2013,
 }
@@ -2432,7 +2427,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 	title =        {Distributed exploration in multi-armed bandits},
 	author =       {E. Hillel and Z. Karnin and T. Koren and R. Lempel
 	and O. Somekh},
-	booktitle =    nips_2013,
+	booktitle =    nips,
 	pages =        {854--862},
 	year =         2013
 }
@@ -2458,7 +2453,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 @inproceedings{lsz-slf-09,
 	title =        {Slow Learners are Fast},
 	author =       {J. Langford and A. J. Smola and M. Zinkevich},
-	booktitle =    NIPS_2009,
+	booktitle =    NIPS,
 	pages =        {2331--2339},
 	year =         2009,
 	url =
@@ -2488,7 +2483,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 	author =       {H.B. {McMahan} and M. Streeter},
 	title =        {Delay-Tolerant Algorithms for Asynchronous
 	Distributed Online Learning},
-	booktitle =    nips_2014,
+	booktitle =    nips,
 	year =         2014,
 	pages =        {2915--2923}
 }
@@ -2515,7 +2510,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 	feedback},
 	author =       {G. Neu and A. Antos and A. Gy{\"o}rgy and
 	C. Szepesv{\'a}ri},
-	booktitle =    nips_2010,
+	booktitle =    nips,
 	pages =        {1804--1812},
 	year =         2010
 }
@@ -2557,7 +2552,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 	author =       {B. Recht and C. Re and S. Wright and F. Niu},
 	title =        {Hogwild: a lock-free approach to parallelizing
 	STOChastic gradient descent},
-	booktitle =    nips_2011,
+	booktitle =    nips,
 	year =         2011,
 	pages =        {693--701}
 }
@@ -2702,7 +2697,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 	title =        {Parallelized stochastic gradient descent},
 	author =       {M. Zinkevich and M. Weimer and L. Li and
 	A. J. Smola},
-	booktitle =    NIPS_2010,
+	booktitle =   nips,
 	pages =        {2595--2603},
 	year =         2010
 }
@@ -2722,7 +2717,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
                C. R{\'{e}}},
   title     = {Asynchronous stochastic convex optimization: the noise is in the noise
                and {SGD} don't care},
-  booktitle = nips_2015,
+  booktitle = nips,
   pages     = {1531--1539},
   year      = {2015},
   url       = {http://papers.nips.cc/paper/6031-asynchronous-stochastic-convex-optimization-the-noise-is-in-the-noise-and-sgd-dont-care},
@@ -2771,7 +2766,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 @inproceedings{lz-epochgreedy-08,
 	title={The epoch-greedy algorithm for multi-armed bandits with side information},
 	author={Langford, John and Zhang, Tong},
-	booktitle=NIPS_2008,
+	booktitle=NIPS,
 	pages={817--824},
 	year={2008}
 }
@@ -5996,7 +5991,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 @inproceedings{quanrud2015online,
   title={Online Learning with Adversarial Delays},
   author={Quanrud, K. and Khashabi, D.},
-  booktitle=nips_2016,
+  booktitle=nips,
   pages={1270--1278},
   year={2015}
 }
@@ -6213,7 +6208,7 @@ url={https://openreview.net/forum?id=K0E_F0gFDgA}
 @inproceedings{simon2001efficient,
   title={Efficient Learning of Linear Perceptrons},
   author={Simon, Shai Ben-David Hans Ulrich},
-  booktitle=nips_2000,
+  booktitle=nips,
   volume={13},
   pages={189},
   year={2001},
@@ -8948,8 +8943,7 @@ booktitle = {IJCAI-77}, year = 1977}
 	D. Manning},
 	title = {{Parsing Natural Scenes and Natural Language with Recursive Neural
 	Networks}},
-	booktitle = {Proceedings of the 26th International Conference on Machine Learning
-	(ICML)},
+	booktitle =icml,
 	year = {2011}
 }
 
@@ -10375,6 +10369,446 @@ institution = "University of California, Irvine, School of Information and Compu
   pages={1--57},
   year={2015}
 }
+
+@PREAMBLE{ "\providecommand{\CNFX}[1]{ {\em{\textrm{(#1)}}}}" }
+
+@string{tacl="Transactions of the Association for Computational Linguistics \textcolor{red}{\bf \CNFX{TACL}}"}
+@string{aimag="\textcolor{blue}{\text{AI Magazine}}"}
+@string{tip="IEEE Transactions on Image Processing {\textcolor{purple}{ \bf \CNFX{TIP}}}"}
+@string{emnlp="Conference on Empirical Methods in Natural Language Processing \textcolor{red}{\bf \CNFX{EMNLP}}"}
+@string{naacl="Conference of the North American Chapter of the Association for Computational Linguistics {\textcolor{red}{ \bf \CNFX{NAACL}}}"}
+@string{acl="Annual Meeting of the Association for Computational Linguistics {\textcolor{red}{ \bf  \CNFX{ACL}}}"}
+@string{ijcai="Proceedings of the International Joint Conference on Artificial Intelligence \textcolor{blue}{\bf \CNFX{IJCAI}}  "}
+@string{aaai="Proceedings of the Conference on Artificial Intelligence \textcolor{blue}{\bf \CNFX{AAAI}}"}
+@string{nips = "Proceedings of the Conference on Advances in Neural Information Processing Systems \textcolor{darkgreen}{\bf \CNFX{NeurIPS}} "}
+
+
+@string{iclr="Proceedings of the International Conference on Learning Representations \CNFX{ICLR}"}
+
+@STRING{conll= "Proceedings of the SIGNLL Conference on Natural Language Learning \CNFX{CoNLL}" }
+@string{jmlr = "Journal of Machine Learning Research \CNFX{JMLR}"}
+@STRING{eacl= "Proceedings of the Conference of the European Chapter of the Association for Computational Linguistics \CNFX{EACL}" }
+
+
+
+
+
+%%% Conference 
+@inproceedings{luu2021time,
+  title={Time Waits for No One! Analysis and Challenges of Temporal Misalignment},
+  author={Luu, Kelvin and Khashabi, Daniel and Gururangan, Suchin and Mandyam, Karishma and Smith, Noah A},
+  booktitle=naacl,
+  year={2022}
+}
+
+@inproceedings{khashabi2021prompt,
+  title={PROMPT WAYWARDNESS: The Curious Case of Discretized Interpretation of Continuous Prompts},
+  author={Khashabi, Daniel and Lyu, Shane and Min, Sewon and Qin, Lianhui and Richardson, Kyle and Singh, Sameer and Welleck, Sean and Hajishirzi, Hannaneh and Khot, Tushar and Sabharwal, Ashish and others},
+  booktitle=naacl,
+  year={2022}
+}
+
+@inproceedings{lu2021neurologic,
+  title={NeuroLogic A* esque Decoding: Constrained Text Generation with Lookahead Heuristics},
+  author={Lu, Ximing and Welleck, Sean and West, Peter and Jiang, Liwei and Kasai, Jungo and Khashabi, Daniel and Bras, Ronan Le and Qin, Lianhui and Yu, Youngjae and Zellers, Rowan and others},
+  booktitle=naacl,
+  year={2022}
+}
+
+@inproceedings{naturalinstructions2022,
+    author={Swaroop, Mishra and Khashabi, Daniel and Baral, Chitta and Hajishirzi, Hannaneh},
+    title = {Cross-Task Generalization via Natural Language Crowdsourcing Instructions},
+    booktitle = acl,
+    year = {2022},
+}
+
+@inproceedings{commaqa2022,
+    author={Khot, Tushar and Richardson, Kyle and Khashabi, Daniel and Sabharwal, Ashish},
+    title = {Learning to Solve Complex Tasks by Talking to Agents},
+    booktitle = acl # " - Findings",
+    year = {2022},
+}
+
+@inproceedings{reframing2022,
+    author={Swaroop, Mishra and Khashabi, Daniel and Baral, Chitta and Choi, Yejin and Hajishirzi, Hannaneh},
+    title = {Reframing Instructional Prompts to GPTk's Language},
+    booktitle = acl # " - Findings",
+    year = {2022},
+}
+
+
+@inproceedings{gooaq2021,
+    author={Khashabi, Daniel and Ng, Amos and Khot, Tushar and Sabharwal, Ashish and Hajishirzi, Hannaneh and Callison-Burch, Chris},
+    title = {GooAQ: Open Question Answering with Diverse Answer Types},
+    booktitle = emnlp # " - Findings",
+    year = {2021},
+}
+
+@inproceedings{zhao2021,
+    author={Zhao, Jieyu and Khashabi, Daniel and Khot, Tushar and Sabharwal, Ashish and Chang, Kai-Wei},
+    title = {Ethical-Advice Taker: Do Language Models Understand Natural Language Interventions?},
+    booktitle = acl # " - Findings",
+    year = {2021},
+}
+
+
+@inproceedings{modularqa2021,
+    author={Khot, Tushar and Khashabi, Daniel and Richardson, Kyle and Clark, Peter and Sabharwal, Ashish},
+    title = {Text Modular Networks: Learning to Decompose Tasksin the Language of Existing Models},
+    booktitle = naacl,
+    year = {2021},
+}
+
+
+@inproceedings{tao2020unqover,
+    author={Li, Tao and Khashabi, Daniel and Khot, Tushar and Sabharwal, Ashish and Srikumar, Vivek},
+    title = {UnQovering Stereotypical Biases via Underspecified Questions},
+    booktitle = emnlp # " - Findings",
+    year = {2020},
+}
+
+
+@inproceedings{khashabi2020unifiedqa,
+    author={Khashabi, Daniel and Min, Sewon and Khot, Tushar and Sabharwal, Ashish and Tafjord, Oyvind and Clark, Peter and Hajishirzi, Hannaneh},
+    title = {UnifiedQA: Crossing Format Boundaries With a Single QA System},
+    booktitle = emnlp # " - Findings",
+    year = {2020},
+}
+
+@inproceedings{gardner2020contrastsets,
+    author={Gardner, Matt and Artzi, Yoav and Basmova, Victoria and Berant, Jonathan and Bogin, Ben and Chen, Sihao and Dasigi, Pradeep and Dua, Dheeru and Elazar, Yanai and Gottumukkala, Ananth and others},
+    title = {Evaluating Models' Local Decision Boundaries via Contrast Sets},
+    booktitle = emnlp # " - Findings",
+    year = {2020},
+}
+
+@inproceedings{khashabi2020naturalperturbations,
+    author = {Daniel Khashabi and Tushar Khot and Ashish Sabhwawal},
+    title = {More Bang for Your Buck: Natural Perturbation for Robust Question Answering},
+    booktitle = emnlp,
+    year = {2020},
+}
+
+
+@inproceedings{hongming2020commonsense,
+    author = {Hongming Zhang and Yangqiu Song and Daniel Khashabi and Dan Roth },
+    title = {Commonsense Knowledge Discovery from Linguistic Graphs},
+    booktitle = ijcai,
+    year = {2020},
+}
+
+@inproceedings{sadeqi2020hypotheses,
+    author = {Sadeqi-Azer, Erfan and Khashabi, Daniel and Sabhwawal, Ashish and Roth, Dan},
+    title = {Not All Claims are Created Equal: Choosing the Right Approach to Assess Your Hypotheses},
+    booktitle = acl,
+    year = {2020},
+}
+
+@inproceedings{zhou2020temporalLM,
+    author = {Ben Zhou and Qiang Ning and Daniel Khashabi and Dan Roth },
+    title = {Temporal Common Sense Acquisition with Minimal Supervision},
+    booktitle = acl,
+    year = {2020},
+}
+
+@inproceedings{zhou2019taco,
+    author = {Ben Zhou and Daniel Khashabi and Qiang Ning and Dan Roth },
+    title = {``Going on a vacation'' takes longer than ``Going for a walk'': A Study of Temporal Commonsense Understanding },
+    booktitle = emnlp,
+    year = {2019},
+}
+
+
+@inproceedings{chen2019perspectroscope,
+    author = {Chen, Sihao and Khashabi, Daniel and Callison-Burch, Chris and Roth, Dan},
+    title = {PerspectroScope: A Window to the World of Diverse Perspectives},
+    booktitle = acl # " - Demonstrations",
+    year = {2019},
+}
+
+@inproceedings{chen2019perspectives,
+    author = {Chen, Sihao and Khashabi, Daniel and Yin, Wenpeng and Callison-Burch, Chris and Roth, Dan},
+    title = {Seeing Things from a Different Angle:Discovering Diverse Perspectives about Claims},
+    booktitle = naacl,
+    year = {2019},
+}
+
+@other{reasoning2018,
+  title={On the Capabilities and Limitations of Reasoning for Natural Language Understanding},
+  author={Khashabi, Daniel and Sadeqi Azer, Erfan and Khot, Tushar and Sabharwal, Ashish and Roth, Dan},
+  notes={(Submitted)},
+  year={2018}, 
+  url= {} 
+}
+
+@inproceedings{khashabi2018multirc,
+    author = {Daniel Khashabi and Snigdha Chaturvedi and Michael Roth and Shyam Upadhyay and Dan Roth },
+    title = {Looking Beyond the Surface: A Challenge Set for Reading Comprehension over Multiple Sentences},
+    booktitle = naacl,
+    year = {2018},
+}
+
+@inproceedings{zhou2018typing,
+    author = {Ben Zhou and Daniel Khashabi and Chen-Tse Tsai and Dan Roth },
+    title = {Zero-Shot Open Entity Typing as Type-Compatible Grounding},
+    booktitle = emnlp,
+    year = {2018},
+}
+
+@inproceedings{2018_lrec_cogcompnlp,
+    author = {Daniel Khashabi and Mark Sammons and Ben Zhou and Tom Redman and Christos Christodoulopoulos and Vivek Srikumar and Nicholas Rizzolo and Lev Ratinov and Guanheng Luo and Quang Do and Chen-Tse Tsai and Subhro Roy and Stephen Mayhew and Zhili Feng and John Wieting and Xiaodong Yu and Yangqiu Song and Shashank Gupta and Shyam Upadhyay and Naveen Arivazhagan and Qiang Ning and Shaoshi Ling and Dan Roth},
+    title = {CogCompNLP: Your Swiss Army Knife for NLP},
+    booktitle = {11th Language Resources and Evaluation Conference (\textcolor{red}{ LREC})},
+    year = {2018},
+}
+
+@inproceedings{semanticilp2018aaai,
+  title={Question Answering as Global Reasoning over Semantic Abstractions},
+  author={Khashabi, Daniel and Khot, Tushar and Sabharwal, Ashish and Roth, Dan},
+  booktitle=aaai,
+  year={2018}, 
+%   url= {http://cogcomp.org/page/publication_view/824} 
+}
+
+
+@InProceedings{khashabi2017essential,
+  author    = {Khashabi, Daniel  and  Khot, Tushar  and  Sabharwal, Ashish  and  Roth, Dan},
+  title     = {Learning What is Essential in Questions},
+  booktitle = {Proceedings of the 21st Conference on Computational Natural Language Learning (\textcolor{red}{CoNLL})},
+%   month     = {August},
+  year      = {2017},
+%   address   = {Vancouver, Canada},
+%   publisher = {Association for Computational Linguistics},
+%   pages     = {80--89},
+%   url       = {http://aclweb.org/anthology/K17-1010}
+}
+
+@inproceedings{khashabi2016tableilp,
+  author    = {Daniel Khashabi and
+               Tushar Khot and
+               Ashish Sabharwal and
+               Peter Clark and
+               Oren Etzioni and
+               Dan Roth},
+  title     = {Question Answering via Integer Programming over Semi-Structured Knowledge},
+  booktitle = ijcai,
+%   pages     = {1145--1152},
+  year      = {2016},
+%   url       = {http://www.ijcai.org/Abstract/16/166}
+}
+
+@inproceedings{kordjamshidi2016better,
+  title={Better call saul: Flexible programming for learning and inference in NLP},
+  author={Kordjamshidi, Parisa and Khashabi, Daniel and Christodoulopoulos, Christos and Mangipudi, Bhargav and Singh, Sameer and Roth, Dan},
+  booktitle={Proceedings of the 26th International Conference on Computational Linguistics (\textcolor{red}{COLING})},
+%   pages={3030--3040},
+  year={2016}, 
+%   url = "http://cogcomp.org/papers/KKCMSR16.pdf",
+}
+
+@InProceedings{peng2015hardCoref,
+  author    = {Peng, Haoruo  and  Khashabi, Daniel  and  Roth, Dan},
+  title     = {Solving Hard Coreference Problems},
+  booktitle = naacl,
+%   month     = {May--June},
+  year      = {2015},
+%   address   = {Denver, Colorado},
+%   publisher = {Association for Computational Linguistics},
+%   pages     = {809--819},
+%   url       = {http://www.aclweb.org/anthology/N15-1082}
+}
+
+
+@inproceedings{aristo2016combining,
+  author    = {Peter Clark and
+               Oren Etzioni and
+               Tushar Khot and
+               Ashish Sabharwal and
+               Oyvind Tafjord and
+               Peter D. Turney and
+               Daniel Khashabi},
+  title     = {Combining Retrieval, Statistics, and Inference to Answer Elementary
+               Science Questions},
+  booktitle = aaai,
+  year      = {2016},
+   url       = {http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/11963}
+}
+
+
+@InProceedings{sammons2016edison,
+  author = {Mark Sammons and Christos Christodoulopoulos and Parisa Kordjamshidi and Daniel Khashabi and Vivek Srikumar and Dan Roth},
+  title = {EDISON: Feature Extraction for NLP, Simplified},
+  booktitle = lrec,
+  year = {2016},
+  date = {23-28},
+ }
+
+
+@inproceedings{quanrud2015delayed,
+ author = {Quanrud, Kent and Khashabi, Daniel},
+ title = {Online Learning with Adversarial Delays},
+ booktitle = nips, 
+ year = {2015},
+} 
+
+@inproceedings{nokhbeh2011tiled,
+  author    = {Mohammad Nokhbeh{-}Zaeem and
+               Daniel Khashabi and
+               Heidar Ali Talebi and
+               Shiva Navabi and
+               Faramarz Vaziri},
+  title     = {Adaptive tiled Neural Networks},
+  booktitle={IEEE International Conference on Systems, Man, and Cybernetics (\textcolor{blue}{SMC})},
+%   pages     = {2543--2548},
+%   publisher = {{IEEE}},
+  year      = {2011}, 
+%   url       = {https://ieeexplore.ieee.org/document/6084059/}
+}
+
+
+%% Journal 
+
+@article{mor2021aristotle, 
+    author={Geva, Mor and Khashabi, Daniel and Segal, Elad and Khot, Tushar and Roth, Dan and Berant, Jonathan}, 
+    journal=tacl, 
+    title={Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies}, 
+    year={2021}, 
+}
+
+@article{parsinlu2021, 
+    title={ParsiNLU: A Suite of Language Understanding Challenges for Persian},
+    author={Khashabi, Daniel and Cohan, Arman and Shakeri, Siamak and Hosseini, Pedram and Pezeshkpour, Pouya and Alikhani, Malihe and Aminnaseri, Moin and Bitaab, Marzieh and Brahman, Faeze and Ghazarian, Sarik and others},
+    journal=tacl, 
+    year={2021}, 
+}
+
+@article{clark2020f,
+  title={From ‘F’ to ‘A’on the NY Regents Science Exams: An Overview of the Aristo Project},
+  author={Clark, Peter and Etzioni, Oren and Khot, Tushar and Khashabi, Daniel and Mishra, Bhavana and Richardson, Kyle and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind and Tandon, Niket and others},
+  journal=aimag,
+  volume={41},
+  number={4},
+  pages={39--53},
+  year={2020}
+}
+
+@article{khashabi2014demosaicing, 
+    author={Khashabi, Daniel and Nowozin, Sebastian and Jancsary, Jeremy and Fitzgibbon, Andrew W}, 
+    journal=tip, 
+    title={Joint Demosaicing and Denoising via Learned Nonparametric Random Fields}, 
+    year={2014}, 
+}
+
+
+%%% Workshops 
+@workshop{2017_saul_relational_learning_starai,
+    author = {Parisa Kordjamshidi and Sameer Singh and Daniel Khashabi and Christos Christodoulopoulos and Mark Sammons and Saurabh Sinha and Dan Roth },
+    title = {Relational Learning and Feature Extraction by Querying over Heterogeneous Information Networks},
+    booktitle = {Seventh International Workshop on Statistical Relational AI (StarAI)},
+    year = {2017},
+    workshoppub = {y}
+    % url = "http://cogcomp.org/papers/2017_saul_relational_learning_starai.pdf",
+}
+
+@workshop{fei2015profiler,
+  title={{Illinois-Profiler:} Knowledge Schemas at Scale},
+  author={Zhiye Fei and Daniel Khashabi and Haoruo Peng and Hao Wu and Dan Roth},
+  booktitle={Workshop on Cognitive Knowledge Acquisition and Applications (Cognitum)}, 
+  year={2015}, 
+  workshoppub = {y}
+}
+
+
+%% Thesis
+@phdthesis{khashabi2019thesis,
+  author    = {Daniel Khashabi},
+  title     = {Reasoning-Driven Question-Answering for Natural Language Understanding},
+  school       = {University of Pennsylvania},
+  year         = {2019},
+}
+
+
+
+
+%%%% Patents 
+@patent{nowozin2016image,
+  title={Image demosaicing},
+  author={Nowozin, Reinhard Sebastian Bernhard and Khashabi, Danyal and Jancsary, Jeremy Martin and Lindbloom, Bruce Justin and Fitzgibbon, Andrew William},
+  year={2016},
+  publisher={Google Patents},
+  note={US Patent 9,344,690}
+}
+
+
+%%% Tech reports 
+@TECHREPORT{khashabi2014mctest,
+  title={Some Notes on Modeling the Semantic Flow of Narratives},
+  author={Khashabi, Daniel and Burges, Christopher JC and Pastusiak, Erin Renshaw Andrzej}, 
+  year={2014}, 
+%   url = {http://www.cis.upenn.edu/~danielkh/files/2014_Semantics_MCTest/2014_mctest_experiments.pdf}
+}
+
+@TECHREPORT{khashabi2013rnn,
+  title={On the Recursive Neural Networks for Relation Extraction and Entity Recognition},
+  author={Khashabi, Daniel},
+  year={2013}, 
+%   url = {https://www.ideals.illinois.edu/handle/2142/46992}
+}
+
+@TECHREPORT{ShahrbafKhashabi11a,
+  author = {Shahrbaf, Meysam and Khashabi, Daniel},
+  title = {Facial Feature Tracking, Extraction and Reduction},
+  institution = {Amirkabir University of Technology(Tehran Polytechnic)},
+  year = {2011},
+%   url = {http://www.cis.upenn.edu/~danielkh/files/2011_RVM_Facial_Feature/2011_internship_report.pdf}
+}
+
+@TECHREPORT{khashabi2015clusteringSideInformation,
+  title={Clustering With Side Information: From a Probabilistic Model to a Deterministic Algorithm},
+  author={Khashabi, Daniel and Liu, Jeffrey Yufei and Wieting, John and Liang, Feng},
+  journal={arXiv preprint arXiv:1508.06235},
+  year={2015}, 
+%   url={https://arxiv.org/abs/1508.06235}
+}
+
+@TECHREPORT{Khashabi2015KnowledgeRH,
+  title={Knowledge Representation: How far we have come?},
+  author={Daniel Khashabi},
+  year={2015}, 
+  institution = {University of Illinois, Urbana-Champaign},
+%   url = {http://www.cis.upenn.edu/~danielkh/files/2015_knowledge_representation/knowledge_representation_writeup.pdf}
+}
+
+@TECHREPORT{amoozgar2012generating,
+  title={Generating Motion Patterns Using Evolutionary Computation in Digital Soccer},
+  author={Amoozgar, Masoud and Khashabi, Daniel and Heydarian, Milad and Nokhbeh, Mohammad and Shouraki, Saeed Bagheri},
+  journal={arXiv preprint arXiv:1212.6216},
+  year={2012}, 
+%   url={https://arxiv.org/pdf/1212.6216.pdf}
+}
+
+@TECHREPORT{nokhbeh2011modelling,
+  title={Modelling and Control of Ball-Plate System},
+  author={Nokhbeh, Mohammad and Khashabi, Daniel}, 
+  year ={2011},
+  institution = {Amirkabir University of Technology(Tehran Polytechnic)},
+%   url={http://www.cis.upenn.edu/~danielkh/files/2011_LinearControl/16.pdf}, 
+}
+
+@TECHREPORT{khashabi2013heteroscedastic,
+  title={Heteroscedastic relevance vector machine},
+  author={Khashabi, Daniel and Ziyadi, Mojtaba and Liang, Feng},
+  journal={arXiv preprint arXiv:1301.2015},
+  year={2013}, 
+%   url={https://arxiv.org/abs/1301.2015}
+}
+
+@TECHREPORT{norouzitallabnemesis,
+  title={Nemesis Team Description 2009},
+  author={Norouzitallab, Mehrab and Korjani, MM and Salehizadeh, SMA and Pourshoghi, Ahmad and Khashabi, Danial and Razaghpanah, Abbas and Kaviani, Pooria and Vosoughpour, Meisam}, 
+%   url={http://ishiilab.jp/member/meshgi-k/files/robocup/tdp-nemesis-2010-long.pdf}
+}
+
 
 
 @inproceedings{jurcicek2009transformation,
