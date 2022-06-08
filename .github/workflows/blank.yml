@@ -79,4 +79,4 @@ jobs:
           default_author: github_actor
 
           # The message for the commit.
-          message: '🤖automated commit!!🤖 committing the file after tidying up!'
+          message: 'automated commit after tidying up! 🤖🤖🤖'
