@@ -14,3 +14,8 @@ for entry in bib_data.entries.keys():
   # make sure they have "year"
   year = bib_data.entries[entry].fields['year']
   print(f" * {entry} -> {year}")
+
+import bibtexparser
+
+with open('ref.bib') as bibtex_file:
+  bib_database = bibtexparser.load(bibtex_file)
