@@ -17,10 +17,16 @@ for entry in bib_data.entries.keys():
 
 # find and raise duplicate article names
 all_keys = list(bib_data.entries.keys())
+repeated_entries = []
 for idx, entry in enumerate(all_keys):
   for entry2 in all_keys[idx+1:]:
     if bib_data.entries[entry].fields['title'].lower().strip() == bib_data.entries[entry2].fields['title'].lower().strip():
-      print(f" * {entry} and {entry2} have the same title")
+      repeated_entries.append(f" * {entry} and {entry2} have the same title")
+
+if len(repeated_entries) > 0:
+  print("\n".join(repeated_entries))
+  raise Exception("There are duplicate article names")
+
 
 import bibtexparser
 
