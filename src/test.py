@@ -15,6 +15,13 @@ for entry in bib_data.entries.keys():
   year = bib_data.entries[entry].fields['year']
   print(f" * {entry} -> {year}")
 
+# find and raise duplicate article names
+all_keys = list(bib_data.entries.keys())
+for idx, entry in enumerate(all_keys):
+  for entry2 in all_keys[idx+1:]:
+    if bib_data.entries[entry].fields['title'].lower().strip() == bib_data.entries[entry2].fields['title'].lower().strip():
+      print(f" * {entry} and {entry2} have the same title")
+
 import bibtexparser
 
 with open('ref.bib') as bibtex_file:
