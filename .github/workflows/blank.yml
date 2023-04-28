@@ -42,7 +42,7 @@ jobs:
       - name: install tidy 
         run: |
           echo 'install tidy'
-          npm install -g bibtex-tidy
+          npm install -g bibtex-tidy@1.11.0
           
       - name: tidy up!  
         run: |
