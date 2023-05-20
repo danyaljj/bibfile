@@ -28,7 +28,7 @@
 @string{aimag = "AI Magazine"}
 @string{akbc = "AKBC Workshop"}
 @string{icdm = "IEEE International Conference on Data Mining \CNFX{ICDM}"}
-@string{kdd = "ACM Conf. Knowl. Disc. and Data Mining \CNFX{KDD}"}
+@string{kdd = "ACM Conference Knowledge Discovery and Data Mining \CNFX{KDD}"}
 @string{www = "International Conference ib World Wide Web Conference \CNFX{WWW}"}
 @string{chi = "Conference on Human Factors in Computing Systems \CNFX{CHI}"}
 @string{corl = "Conference on Robot Learning \CNFX{CoRL}"}
@@ -58,6 +58,7 @@
 @string{ccs = "ACM SIGSAC Conference on Computer and Communications Security \CNFX{CCS}"}
 @string{sp = "IEEE Symposium on Security and Privacy \CNFX{SP}"}
 @string{tmlr = "Transactions on Machine Learning Research \CNFX{TMLR}"}
+@string{usenix = "USENIX Security Symposium \CNFX{USENIX}"}
 @preamble{"\providecommand{\CNFX}[1]{{\em{\textrm{(#1)}}}}" }
 @book{locke1836an,
 	title        = {An essay concerning human understanding},
@@ -2209,7 +2210,7 @@
 	title        = {{BLEU}: a Method for Automatic Evaluation of Machine Translation},
 	author       = {Kishore Papineni and Salim Roukos and Todd Ward and Wei-Jing Zhu},
 	year         = 2002,
-	booktitle    = {Proc.\ of ACL},
+	booktitle    = acl,
 	url          = {https://www.aclweb.org/anthology/P02-1040.pdf},
 }
 @inproceedings{doddington2002automatic,
@@ -2266,14 +2267,6 @@
 	year         = 2002,
 	booktitle    = {Third international conference on Language Resources and Evaluation-LREC'02},
 	pages        = {7--p},
-}
-@inproceedings{papineni2002bleu2,
-	title        = {Bleu: a method for automatic evaluation of machine translation},
-	author       = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
-	year         = 2002,
-	booktitle    = acl,
-	pages        = {311--318},
-	url          = {https://aclanthology.org/P02-1040.pdf},
 }
 @inproceedings{brill2002an,
 	title        = {An analysis of the {AskMSR} question-answering system},
@@ -7425,10 +7418,8 @@
 	title        = {{TriviaQA}: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension},
 	author       = {Joshi, Mandar and Choi, Eunsol and Weld, Daniel S. and Zettlemoyer, Luke},
 	year         = 2017,
-	booktitle    = {Proc.\ of ACL},
+	booktitle    = acl,
 	url          = {https://arxiv.org/abs/1705.03551},
-	_address     = {Vancouver, Canada},
-	_publisher   = {Association for Computational Linguistics},
 }
 @inproceedings{reddy2017universal,
 	title        = {Universal Semantic Parsing},
@@ -8273,7 +8264,8 @@
 	title        = {{HotpotQA}: A Dataset for Diverse, Explainable Multi-hop Question Answering},
 	author       = {Zhilin Yang and Peng Qi and Saizheng Zhang and Yoshua Bengio and William W. Cohen and Ruslan Salakhutdinov and Christopher D. Manning},
 	year         = 2018,
-	booktitle    = EMNLP,
+	booktitle    = emnlp,
+        url={https://arxiv.org/abs/1809.09600}
 }
 @inproceedings{mihaylov2018can,
 	title        = {Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering},
@@ -8620,13 +8612,13 @@
 	pages        = {91--110},
 }
 @article{kwiatkowski2019natural,
-	title        = {Natural questions: a benchmark for question answering research},
+	title        = {{Natural Questions: A} benchmark for question answering research},
 	author       = {Kwiatkowski, Tom and Palomaki, Jennimaria and Redfield, Olivia and Collins, Michael and Parikh, Ankur and Alberti, Chris and Epstein, Danielle and Polosukhin, Illia and Devlin, Jacob and Lee, Kenton and others},
 	year         = 2019,
-	journal      = {Transactions of the Association for Computational Linguistics},
-	publisher    = {MIT Press},
+	journal      = tacl,
 	volume       = 7,
 	pages        = {453--466},
+    url={https://aclanthology.org/Q19-1026/}
 }
 @article{song2019generative,
 	title        = {Generative modeling by estimating gradients of the data distribution},
@@ -9790,6 +9782,7 @@
 	author       = {Gao, Leo and Biderman, Stella and Black, Sid and Golding, Laurence and Hoppe, Travis and Foster, Charles and Phang, Jason and He, Horace and Thite, Anish and Nabeshima, Noa and Presser, Shawn and Leahy, Connor},
 	year         = 2020,
 	journal      = {arXiv preprint arXiv:2101.00027},
+    url={https://arxiv.org/abs/2101.00027}
 }
 @article{mitra2020how,
 	title        = {How Additional Knowledge can Improve Natural Language Commonsense Question Answering},
@@ -11451,6 +11444,14 @@
 	journal      = cl,
 	url          = {https://arxiv.org/abs/1910.13913},
 }
+@inproceedings{luccioni2021s,
+  title={What's in the Box? A Preliminary Analysis of Undesirable Content in the Common Crawl Corpus},
+  author={Luccioni, Alexandra Sasha and Viviano, Joseph D},
+  journal={arXiv preprint arXiv:2105.02732},
+  year={2021},
+  booktitle=acl,
+  url={https://arxiv.org/abs/2105.02732}
+}
 @article{zhang2021s,
 	title        = {{S}ituated{QA}: Incorporating Extra-Linguistic Contexts into {QA}},
 	author       = {Zhang, Michael J.Q. and Choi, Eunsol},
@@ -11709,7 +11710,8 @@
 	title        = {{KILT}: {A} Benchmark for Knowledge Intensive Language Tasks},
 	author       = {Fabio Petroni and Aleksandra Piktus and Angela Fan and Patrick Lewis and Majid Yazdani and Nicola De Cao and James Thorne and Yacine Jernite and Vassilis Plachouras and Tim Rockt{\"{a}}schel and Sebastian Riedel},
 	year         = 2021,
-	booktitle    = {NAACL},
+	booktitle    = naacl,
+ url={https://arxiv.org/abs/2009.02252}
 }
 @inproceedings{ammanabrolu2021how,
 	title        = {How to Motivate Your Dragon: Teaching Goal-Driven Agents to Speak and Act in Fantasy Worlds},
@@ -12053,7 +12055,8 @@
 	title        = {Documenting Large Webtext Corpora: A Case Study on the Colossal Clean Crawled Corpus},
 	author       = {Dodge, Jesse and Sap, Maarten and Marasovic, Ana and Agnew, William and Ilharco, Gabriel and Groeneveld, Dirk and Gardner, Matt},
 	year         = 2021,
-	booktitle    = EMNLP,
+	booktitle    = emnlp,
+    url={https://arxiv.org/abs/2104.08758}
 }
 @inproceedings{dalvi2021explaining,
 	title        = {Explaining Answers with Entailment Trees},
@@ -12880,6 +12883,7 @@
 	author       = {Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Eric and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and others},
 	year         = 2022,
 	journal      = {arXiv preprint arXiv:2210.11416},
+        url={https://arxiv.org/abs/2210.11416}
 }
 @article{huang2022large,
 	title        = {Large Language Models Can Self-Improve},
@@ -13101,7 +13105,6 @@
 	year         = 2022,
 	journal      = nips,
 	volume       = 35,
-	pages        = {16344--16359},
 }
 @inproceedings{boucher2022bad,
 	title        = {Bad characters: Imperceptible nlp attacks},
@@ -13687,6 +13690,7 @@
 	author       = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
 	year         = 2023,
 	journal      = {arXiv preprint arXiv:2302.13971},
+    url={https://arxiv.org/abs/2302.13971}
 }
 @article{prasad2022grips,
 	title        = {Grips: Gradient-free, edit-based instruction search for prompting large language models},
@@ -13704,7 +13708,7 @@
 	data         = {https://github.com/google/BIG-bench},
 }
 @inproceedings{wang2023selfinstruct,
-	title        = {Self-Instruct: Aligning Language Model with Self Generated Instructions},
+	title        = {{Self-Instruct: Aligning Language Model with Self Generated Instructions}},
 	author       = {Yizhong Wang and Yeganeh Kordi and Swaroop Mishra and Alisa Liu and Noah A. Smith and Daniel Khashabi and Hannaneh Hajishirzi},
 	year         = 2023,
 	booktitle    = acl,
@@ -13760,4 +13764,241 @@
 	year         = 2023,
 	booktitle    = sp,
 	url          = {https://arxiv.org/abs/2009.04131},
+}
+@inproceedings{carlini2022quantifying,
+  title={Quantifying memorization across neural language models},
+  author={Carlini, Nicholas and Ippolito, Daphne and Jagielski, Matthew and Lee, Katherine and Tramer, Florian and Zhang, Chiyuan},
+  year={2023},
+  url={https://arxiv.org/abs/2202.07646},
+  booktitle=iclr,
+}
+@article{manakul2023selfcheckgpt,
+  title={Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models},
+  author={Manakul, Potsawee and Liusie, Adian and Gales, Mark JF},
+  journal={arXiv preprint arXiv:2303.08896},
+  year={2023}
+}
+@article{menick2022teaching,
+  title={Teaching language models to support answers with verified quotes},
+  author={Menick, Jacob and Trebacz, Maja and Mikulik, Vladimir and Aslanides, John and Song, Francis and Chadwick, Martin and Glaese, Mia and Young, Susannah and Campbell-Gillingham, Lucy and Irving, Geoffrey and others},
+  journal={arXiv preprint arXiv:2203.11147},
+  year={2022},
+  url={https://arxiv.org/abs/2203.11147}
+}
+@article{lee2022factuality,
+  title={Factuality enhanced language models for open-ended text generation},
+  author={Lee, Nayeon and Ping, Wei and Xu, Peng and Patwary, Mostofa and Fung, Pascale N and Shoeybi, Mohammad and Catanzaro, Bryan},
+  journal=nips,
+  year={2022},
+  url={https://arxiv.org/abs/2206.04624}
+}
+@article{bohnet2022attributed,
+  title={Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models},
+  author={Bohnet, Bernd and Tran, Vinh Q and Verga, Pat and Aharoni, Roee and Andor, Daniel and Soares, Livio Baldini and Eisenstein, Jacob and Ganchev, Kuzman and Herzig, Jonathan and Hui, Kai and others},
+  journal={arXiv preprint arXiv:2212.08037},
+  year={2022},
+  url={https://arxiv.org/pdf/2212.08037.pdf}
+}
+@article{han2022orca,
+  title={{ORCA:} Interpreting prompted language models via locating supporting data evidence in the ocean of pretraining data},
+  author={Han, Xiaochuang and Tsvetkov, Yulia},
+  journal={arXiv preprint arXiv:2205.12600},
+  year={2022},
+  url={https://arxiv.org/abs/2205.12600}
+}
+@article{park2023trak,
+  title={{TRAK: Attributing Model Behavior at Scale}},
+  author={Park, Sung Min and Georgiev, Kristian and Ilyas, Andrew and Leclerc, Guillaume and Madry, Aleksander},
+  journal={arXiv preprint arXiv:2303.14186},
+  year={2023},
+  url={https://arxiv.org/pdf/2303.14186.pdf}
+}
+@inproceedings{fan2019eli5,
+  title={{ELI5: Long Form Question Answering}},
+  author={Fan, Angela and Jernite, Yacine and Perez, Ethan and Grangier, David and Weston, Jason and Auli, Michael},
+  booktitle=acl,
+  year={2019},
+  url={https://arxiv.org/abs/1907.09190}
+}
+@article{chang2023speak,
+  title={Speak, Memory: An Archaeology of Books Known to ChatGPT/GPT-4},
+  author={Chang, Kent K and Cramer, Mackenzie and Soni, Sandeep and Bamman, David},
+  journal={arXiv preprint arXiv:2305.00118},
+  year={2023},
+  url={https://arxiv.org/abs/2305.00118}
+}
+@article{he2022rethinking,
+  title={Rethinking with Retrieval: Faithful Large Language Model Inference},
+  author={He, Hangfeng and Zhang, Hongming and Roth, Dan},
+  journal={arXiv preprint arXiv:2301.00303},
+  year={2022},
+  url={https://arxiv.org/abs/2301.00303}
+}
+@article{ji-etal-2022-survey,
+  title={Survey of hallucination in natural language generation},
+  author={Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Yejin and Madotto, Andrea and Fung, Pascale},
+  journal={ACM Computing Surveys},
+  year={2022},
+  url={https://arxiv.org/abs/2202.03629}
+}
+@article{gabriel-etal-2020-paragraph,
+  title={Paragraph-level commonsense transformers with recurrent memory},
+  author={Gabriel, Saadia and Bhagavatula, Chandra and Shwartz, Vered and Bras, Ronan Le and Forbes, Maxwell and Choi, Yejin},
+  journal={arXiv preprint arXiv:2010.01486},
+  year={2020}
+}
+@inproceedings{dai-etal-2022-dialog,
+  title={Dialog Inpainting: Turning Documents to Dialogs},
+  author={Dai, Zhuyun and Chaganty, Arun Tejasvi and Zhao, Vincent and Amini, Aida and Green, Mike and Rashid, Qazi and Guu, Kelvin},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2022},
+  organization={PMLR}
+}
+@article{demszky-etal-2018-transforming,
+  title={Transforming question answering datasets into natural language inference datasets},
+  author={Demszky, Dorottya and Guu, Kelvin and Liang, Percy},
+  journal={arXiv preprint arXiv:1809.02922},
+  year={2018}
+}
+@inproceedings{Carlini2020ExtractingTD,
+  title={Extracting Training Data from Large Language Models},
+  author={Nicholas Carlini and Florian Tram{\`e}r and Eric Wallace and Matthew Jagielski and Ariel Herbert-Voss and Katherine Lee and Adam Roberts and Tom B. Brown and Dawn Xiaodong Song and {\'U}lfar Erlingsson and Alina Oprea and Colin Raffel},
+  booktitle=usenix,
+  year={2020},
+  url={https://arxiv.org/abs/2012.07805}
+}
+
+@inproceedings{lee2022deduplicating,
+    title = "Deduplicating Training Data Makes Language Models Better",
+    author = "Lee, Katherine  and
+      Ippolito, Daphne  and
+      Nystrom, Andrew  and
+      Zhang, Chiyuan  and
+      Eck, Douglas  and
+      Callison-Burch, Chris  and
+      Carlini, Nicholas",
+    booktitle = acl,
+    year = "2022",
+    url = "https://aclanthology.org/2022.acl-long.577",
+    pages = "8424--8445",
+    url={https://arxiv.org/abs/2107.06499}
+}
+
+@article{bloom1970spacetime,
+author = {Bloom, Burton H.},
+title = {Space/Time Trade-Offs in Hash Coding with Allowable Errors},
+year = {1970},
+volume = {13},
+number = {7},
+url = {https://doi.org/10.1145/362686.362692},
+journal = cacm,
+month = {jul},
+pages = {422–426},
+numpages = {5},
+}
+@inproceedings{shuster2021retrieval,
+  title={Retrieval Augmentation Reduces Hallucination in Conversation},
+  author={Shuster, Kurt and Poff, Spencer and Chen, Moya and Kiela, Douwe and Weston, Jason},
+  booktitle= "Findings- " # emnlp,
+  year={2021},
+  url={https://arxiv.org/abs/2104.07567}
+}
+@article{liu2023evaluating,
+  title={Evaluating Verifiability in Generative Search Engines},
+  author={Liu, Nelson F and Zhang, Tianyi and Liang, Percy},
+  journal={arXiv preprint arXiv:2304.09848},
+  year={2023},
+  url={https://arxiv.org/abs/2304.09848}
+}
+@article{manakul2023selfcheckgpt,
+  title={Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models},
+  author={Manakul, Potsawee and Liusie, Adian and Gales, Mark JF},
+  journal={arXiv preprint arXiv:2303.08896},
+  year={2023}
+}
+@inproceedings{sun2022contrastive,
+  title={Contrastive Learning Reduces Hallucination in Conversations},
+  author={Sun, Weiwei and Shi, Zhengliang and Gao, Shen and Ren, Pengjie and de Rijke, Maarten and Ren, Zhaochun},
+  booktitle=aaai,
+  year={2023},
+  url={https://arxiv.org/abs/2212.10400}
+}
+@inproceedings{popovic2017chrfpp,
+  title={{chrF++:} words helping character n-grams},
+  author={Popovi{\'c}, Maja},
+  booktitle=wmt,
+  year={2017},
+  url={https://aclanthology.org/W17-4770/}
+}
+@article{izacard2022atlas,
+  title={Atlas: Few-shot learning with retrieval augmented language models},
+  author={Izacard, Gautier and Lewis, Patrick and Lomeli, Maria and Hosseini, Lucas and Petroni, Fabio and Schick, Timo and Dwivedi-Yu, Jane and Joulin, Armand and Riedel, Sebastian and Grave, Edouard},
+  journal={arXiv preprint arXiv},
+  year={2022},
+  url={https://arxiv.org/abs/2208.03299}
+}
+@inproceedings{borgeaud2022improving,
+  title={Improving language models by retrieving from trillions of tokens},
+  author={Borgeaud, Sebastian and Mensch, Arthur and Hoffmann, Jordan and Cai, Trevor and Rutherford, Eliza and Millican, Katie and Van Den Driessche, George Bm and Lespiau, Jean-Baptiste and Damoc, Bogdan and Clark, Aidan and others},
+  booktitle=icml,
+  year={2022},
+  url={https://arxiv.org/abs/2112.04426}
+}
+@article{marone2023dataportraits,
+    title = {Data Portraits: Recording Foundation Model Training Data},
+    author = {Marone, Marc and {Van Durme}, Benjamin},
+    journal={arXiv preprint arXiv:2303.03919},
+    url = {https://arxiv.org/abs/2303.03919},
+    publisher = {arXiv},
+    year = {2023},
+}
+@article{wan2023poisoning,
+  title={Poisoning Language Models During Instruction Tuning},
+  author={Wan, Alexander and Wallace, Eric and Shen, Sheng and Klein, Dan},
+  journal={arXiv preprint arXiv:2305.00944},
+  year={2023},
+  url={https://arxiv.org/abs/2305.00944}
+}
+@article{ganguli2023capacity,
+  title={The capacity for moral self-correction in large language models},
+  author={Ganguli, Deep and Askell, Amanda and Schiefer, Nicholas and Liao, Thomas and Luko{\v{s}}i{\=u}t{\.e}, Kamil{\.e} and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and Olsson, Catherine and Hernandez, Danny and others},
+  journal={arXiv preprint arXiv:2302.07459},
+  year={2023},
+  url={https://arxiv.org/abs/2302.07459}
+}
+@article{wang2022rationale,
+  title={Rationale-augmented ensembles in language models},
+  author={Wang, Xuezhi and Wei, Jason and Schuurmans, Dale and Le, Quoc and Chi, Ed and Zhou, Denny},
+  journal={arXiv preprint arXiv:2207.00747},
+  year={2022},
+  url={https://arxiv.org/abs/2207.00747}
+}
+@inproceedings{Su2022ReadBG,
+  title={Read before Generate! Faithful Long Form Question Answering with Machine Reading},
+  author={Dan Su and Xiaoguang Li and Jindi Zhang and Lifeng Shang and Xin Jiang and Qun Liu and Pascale Fung},
+  year={2022},
+  booktitle="Findings - " # acl,
+  url={https://arxiv.org/abs/2203.00343}
+}
+@inproceedings{li-etal-2022-pre,
+    title = "How Pre-trained Language Models Capture Factual Knowledge? A Causal-Inspired Analysis",
+    author = "Li, Shaobo  and
+      Li, Xiaoguang  and
+      Shang, Lifeng  and
+      Dong, Zhenhua  and
+      Sun, Chengjie  and
+      Liu, Bingquan  and
+      Ji, Zhenzhou  and
+      Jiang, Xin  and
+      Liu, Qun",
+    booktitle = acl,
+    year = "2022",
+    url = "https://aclanthology.org/2022.findings-acl.136",
+}
+@inproceedings{popovic2015chrf,
+  title={{chrF:} character n-gram F-score for automatic MT evaluation},
+  author={Popovi{\'c}, Maja},
+  booktitle=wmt,
+  year={2015},
+  url={https://aclanthology.org/W15-3049/}
 }
