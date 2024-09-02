@@ -15605,14 +15605,6 @@
 	year         = 2022,
 	eprint       = {2207.07051},
 }
-@misc{he2022blind,
-	title        = {On the Blind Spots of Model-Based Evaluation Metrics for Text Generation},
-	author       = {Tianxing He and Jingyu Zhang and Tianle Wang and Sachin Kumar and Kyunghyun Cho and James Glass and Yulia Tsvetkov},
-	year         = 2022,
-	eprint       = {2212.10020},
-	archiveprefix = {arXiv},
-	primaryclass = {cs.CL},
-}
 @misc{peft,
 	title        = {PEFT: State-of-the-art Parameter-Efficient Fine-Tuning methods},
 	author       = {Sourab Mangrulkar and Sylvain Gugger and Lysandre Debut and Younes Belkada and Sayak Paul and Benjamin Bossan},
@@ -20365,4 +20357,85 @@
 	booktitle    = nips,
 	volume       = 36,
 	url          = {https://arxiv.org/pdf/2306.06070},
+}
+@inproceedings{Carlini2020ExtractingTD,
+	title        = {Extracting Training Data from Large Language Models},
+	author       = {Nicholas Carlini and Florian Tram{\`e}r and Eric Wallace and Matthew Jagielski and Ariel Herbert-Voss and Katherine Lee and Adam Roberts and Tom B. Brown and Dawn Xiaodong Song and {\'U}lfar Erlingsson and Alina Oprea and Colin Raffel},
+	year         = 2020,
+	booktitle    = usenix,
+	url          = {https://arxiv.org/abs/2012.07805},
+}
+@inproceedings{karthikeyan2019cross,
+	title        = {Cross-lingual ability of multilingual bert: An empirical study},
+	author       = {Karthikeyan, K and Wang, Zihan and Mayhew, Stephen and Roth, Dan},
+	year         = 2019,
+	booktitle    = {International Conference on Learning Representations},
+}
+@article{Mcnemar1947NoteOT,
+  title={Note on the sampling error of the difference between correlated proportions or percentages},
+  author={Quinn Mcnemar},
+  journal={Psychometrika},
+  year={1947},
+  volume={12},
+  pages={153-157},
+  url={https://api.semanticscholar.org/CorpusID:46226024}
+}
+@inproceedings{lin-etal-2022-truthfulqa,
+    title = "{T}ruthful{QA}: Measuring How Models Mimic Human Falsehoods",
+    author = "Lin, Stephanie  and
+      Hilton, Jacob  and
+      Evans, Owain",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "ACL",
+    month = may,
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+    abstract = "We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58{\%} of questions, while human performance was 94{\%}. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than fine-tuning using training objectives other than imitation of text from the web.",
+    url={https://arxiv.org/abs/2109.07958}
+}
+
+@inproceedings{he-etal-2023-blind,
+    title = "On the Blind Spots of Model-Based Evaluation Metrics for Text Generation",
+    author = "He, Tianxing  and
+      Zhang, Jingyu  and
+      Wang, Tianle  and
+      Kumar, Sachin  and
+      Cho, Kyunghyun  and
+      Glass, James  and
+      Tsvetkov, Yulia",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "ACL",
+    month = jul,
+    year = "2023",
+    abstract = "In this work, we explore a useful but often neglected methodology for robustness analysis of text generation evaluation metrics: stress tests with synthetic data. Basically, we design and synthesize a wide range of potential errors and check whether they result in a commensurate drop in the metric scores. We examine a range of recently proposed evaluation metrics based on pretrained language models, for the tasks of open-ended generation, translation, and summarization. Our experiments reveal interesting insensitivities, biases, or even loopholes in existing metrics. For example, we find that BERTScore is confused by truncation errors in summarization, and MAUVE (built on top of GPT-2) is insensitive to errors at the beginning or middle of generations. Further, we investigate the reasons behind these blind spots and suggest practical workarounds for a more reliable evaluation of text generation. We have released our code and data at \url{https://github.com/cloudygoose/blindspot_nlg}.",
+    url = {https://arxiv.org/abs/2212.10020}
+}
+@article{qi2020retrieve,
+	title        = {Retrieve, Read, Rerank, then Iterate: Answering Open-Domain Questions of Varying Reasoning Steps from Text},
+	author       = {Qi, Peng and Lee, Haejun and Sido, Oghenetegiri and Manning, Christopher D and others},
+	year         = 2020,
+	journal      = {arXiv preprint arXiv:2010.12527},
+}
+@article{corder1967significance,
+  title={The significance of learner's errors},
+  author={Corder, Stephen Pit},
+  year={1967},
+  publisher={Walter de Gruyter, Berlin/New York Berlin, New York}
+}
+@inproceedings{dror2018hitchhiker,
+  title={The hitchhiker’s guide to testing statistical significance in natural language processing},
+  author={Dror, Rotem and Baumer, Gili and Shlomov, Segev and Reichart, Roi},
+  booktitle={Proceedings of the 56th annual meeting of the association for computational linguistics (volume 1: Long papers)},
+  pages={1383--1392},
+  year={2018}
+}
+@book{mayo1996error,
+  title={Error and the growth of experimental knowledge},
+  author={Mayo, Deborah G},
+  year={1996},
+  publisher={University of Chicago Press}
 }
