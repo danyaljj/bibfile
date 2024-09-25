@@ -183,7 +183,7 @@
 	volume       = 6,
 	pages        = {247--254},
 }
-@article{rosenblatt1958the,
+@article{rosenblatt1958perceptron,
 	title        = {The perceptron: a probabilistic model for information storage and organization in the brain.},
 	author       = {Rosenblatt, Frank},
 	year         = 1958,
@@ -16434,13 +16434,6 @@
 	year         = 2022,
 	journal      = {arXiv preprint arXiv:2211.03540},
 }
-@article{kandpal2022large,
-	title        = {Large language models struggle to learn long-tail knowledge},
-	author       = {Kandpal, Nikhil and Deng, Haikang and Roberts, Adam and Wallace, Eric and Raffel, Colin},
-	year         = 2022,
-	journal      = {arXiv preprint arXiv:2211.08411},
-	url          = {https://arxiv.org/abs/2211.08411},
-}
 @article{gao2022pal,
 	title        = {PAL: Program-aided Language Models},
 	author       = {Gao, Luyu and Madaan, Aman and Zhou, Shuyan and Alon, Uri and Liu, Pengfei and Yang, Yiming and Callan, Jamie and Neubig, Graham},
@@ -20520,13 +20513,12 @@
 	booktitle    = {arXiv.org},
 	url          = {https://www.semanticscholar.org/paper/77e07e5542b450a2ee3193993c552700ad9ba82d},
 }
-@inproceedings{zhou2024reframingtaxlaw,
+@inproceedings{zou2024reframingtaxlaw,
 	title        = {Reframing Tax Law Entailment as Analogical Reasoning},
 	author       = {{Xinrui Zou} and {Ming Zhang} and {Nathaniel Weir} and {Benjamin Van Durme} and {Nils Holzenberger}},
 	year         = 2024,
-	month        = jan,
 	booktitle    = {arXiv.org},
-	url          = {https://www.semanticscholar.org/paper/e993e7971fa8b96514fd63699c12bec68e83b6d1},
+	url          = {https://arxiv.org/pdf/2401.06715.pdf},
 }
 @inproceedings{blakeney2024does,
 	title        = {Does your data spark joy? Performance gains from domain upsampling at the end of training},
@@ -20995,4 +20987,131 @@
 	year         = 2024,
 	booktitle    = nips,
 	url          = {https://arxiv.org/abs/2303.07895},
+}
+@inproceedings{kandpal2023large,
+  title={Large language models struggle to learn long-tail knowledge},
+  author={Kandpal, Nikhil and Deng, Haikang and Roberts, Adam and Wallace, Eric and Raffel, Colin},
+  booktitle={International Conference on Machine Learning},
+  pages={15696--15707},
+  year={2023},
+  url          = {https://arxiv.org/abs/2211.08411},
+}
+@inproceedings{ghosh2022epic,
+  title={ePiC: Employing Proverbs in Context as a Benchmark for Abstract Language Understanding},
+  author={Ghosh, Sayan and Srivastava, Shashank},
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={3989--4004},
+  year={2022}
+}
+@inproceedings{suzgun-etal-2023-challenging,
+    title = "Challenging {BIG}-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+    author = {Suzgun, Mirac  and
+      Scales, Nathan  and
+      Sch{\"a}rli, Nathanael  and
+      Gehrmann, Sebastian  and
+      Tay, Yi  and
+      Chung, Hyung Won  and
+      Chowdhery, Aakanksha  and
+      Le, Quoc  and
+      Chi, Ed  and
+      Zhou, Denny  and
+      Wei, Jason},
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.824",
+    doi = "10.18653/v1/2023.findings-acl.824",
+    pages = "13003--13051",
+    abstract = "BIG-Bench (Srivastava et al., 2022) is a diverse evaluation suite that focuses on tasks believed to be beyond the capabilities of current language models. Language models have already made good progress on this benchmark, with the best model in the BIG-Bench paper outperforming average reported human-rater results on 65{\%} of the BIG-Bench tasks via few-shot prompting. But on what tasks do language models fall short of average human-rater performance, and are those tasks actually unsolvable by current language models? In this work, we focus on a suite of 23 challenging BIG-Bench tasks which we call BIG-Bench Hard (BBH). These are the tasks for which prior language model evaluations did not outperform the average human-rater. We find that applying chain-of-thought (CoT) prompting to BBH tasks enables PaLM to surpass the average human-rater performance on 10 of the 23 tasks, and Codex (code-davinci-002) to surpass the average human-rater performance on 17 of the 23 tasks. Since many tasks in BBH require multi-step reasoning, few-shot prompting without CoT, as done in the BIG-Bench evaluations (Srivastava et al., 2022), substantially underestimates the best performance and capabilities of language models, which is better captured via CoT prompting. As further analysis, we explore the interaction between CoT and model scale on BBH, finding that CoT enables emergent task performance on several BBH tasks with otherwise flat scaling curves.",
+}
+@inproceedings{wijesiriwardene2023analogical,
+  title={ANALOGICAL-A Novel Benchmark for Long Text Analogy Evaluation in Large Language Models},
+  author={Wijesiriwardene, Thilini and Wickramarachchi, Ruwan and Gajera, Bimal and Gowaikar, Shreeyash and Gupta, Chandan and Chadha, Aman and Reganti, Aishwarya Naresh and Sheth, Amit and Das, Amitava},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2023},
+  pages={3534--3549},
+  year={2023}
+}
+@misc{sourati2024arnanalogicalreasoningnarratives,
+      title={ARN: Analogical Reasoning on Narratives},
+      author={Zhivar Sourati and Filip Ilievski and Pia Sommerauer and Yifan Jiang},
+      year={2024},
+      eprint={2310.00996},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2310.00996},
+}
+
+@inproceedings{lewis2024using,
+  title={Using Counterfactual Tasks to Evaluate the Generality of Analogical Reasoning in Large Language Models},
+  author={Lewis, Martha and Mitchell, Melanie},
+  booktitle={Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume={46},
+  year={2024}
+}
+@article{nagarajah2022understanding,
+  title={Understanding narratives through dimensions of analogy},
+  author={Nagarajah, Thiloshon and Ilievski, Filip and Pujara, Jay},
+  journal={arXiv preprint arXiv:2206.07167},
+  year={2022}
+}
+
+@article{hodel2023response,
+  title={Response: Emergent analogical reasoning in large language models},
+  author={Hodel, Damian and West, Jevin},
+  journal={arXiv preprint arXiv:2308.16118},
+  year={2023}
+}
+@article{musker2024semantic,
+  title={Semantic Structure-Mapping in LLM and Human Analogical Reasoning},
+  author={Musker, Sam and Duchnowski, Alex and Milli{\`e}re, Rapha{\"e}l and Pavlick, Ellie},
+  journal={arXiv preprint arXiv:2406.13803},
+  year={2024}
+}
+@inproceedings{bizzoni-lappin-2018-predicting,
+    title = "Predicting Human Metaphor Paraphrase Judgments with Deep Neural Networks",
+    author = "Bizzoni, Yuri  and
+      Lappin, Shalom",
+    editor = "Beigman Klebanov, Beata  and
+      Shutova, Ekaterina  and
+      Lichtenstein, Patricia  and
+      Muresan, Smaranda  and
+      Wee, Chee",
+    booktitle = "Proceedings of the Workshop on Figurative Language Processing",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W18-0906",
+    doi = "10.18653/v1/W18-0906",
+    pages = "45--55",
+    abstract = "We propose a new annotated corpus for metaphor interpretation by paraphrase, and a novel DNN model for performing this task. Our corpus consists of 200 sets of 5 sentences, with each set containing one reference metaphorical sentence, and four ranked candidate paraphrases. Our model is trained for a binary classification of paraphrase candidates, and then used to predict graded paraphrase acceptability. It reaches an encouraging 75{\%} accuracy on the binary classification task, and high Pearson (.75) and Spearman (.68) correlations on the gradient judgment prediction task.",
+}
+@misc{sultan2024parallelparc,
+      title={ParallelPARC: A Scalable Pipeline for Generating Natural-Language Analogies},
+      author={Oren Sultan and Yonatan Bitton and Ron Yosef and Dafna Shahaf},
+      year={2024},
+      eprint={2403.01139},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+@misc{yuan2023beneath,
+      title={Beneath Surface Similarity: Large Language Models Make Reasonable Scientific Analogies after Structure Abduction},
+      author={Siyu Yuan and Jiangjie Chen and Xuyang Ge and Yanghua Xiao and Deqing Yang},
+      year={2023},
+      eprint={2305.12660},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+@misc{sultan2023life,
+      title={Life is a Circus and We are the Clowns: Automatically Finding Analogies between Situations and Processes},
+      author={Oren Sultan and Dafna Shahaf},
+      year={2023},
+      eprint={2210.12197},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
 }
