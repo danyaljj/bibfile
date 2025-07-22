@@ -23,9 +23,9 @@ for idx, entry in enumerate(all_keys):
     if bib_data.entries[entry].fields['title'].lower().strip() == bib_data.entries[entry2].fields['title'].lower().strip():
       repeated_entries.append(f" * WARNING: {entry} and {entry2} have the same title")
 
-# if len(repeated_entries) > 0:
-#   print("\n".join(repeated_entries))
-#   raise Exception("There are duplicate article names")
+if len(repeated_entries) > 0:
+  print("\n".join(repeated_entries))
+  raise Exception("There are duplicate article names")
 
 
 import bibtexparser
