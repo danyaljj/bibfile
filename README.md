@@ -13,11 +13,11 @@ Papers authored by Daniel Khashabi have a `tags` field with topic labels used fo
 When adding a new Khashabi paper, run the following Claude Code slash command to assign tags automatically:
 
 ```
-/tag-khashabi-papers <bibtex-key>
+/tag-papers <bibtex-key>
 ```
 
 Or run it without arguments to process all untagged Khashabi papers:
 
 ```
-/tag-khashabi-papers
+/tag-papers
 ```
