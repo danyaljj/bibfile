@@ -24,6 +24,7 @@ Your task is to assign topic tags to one or more papers by Daniel Khashabi in `r
    - `Multilingual`
    - `Long-context`
    - `Embodied`
+   - `Continual Learning`
 
 4. Preserve any existing tags already in the field (e.g. `selected`). Add the new topic tags alongside them. Use comma-separated values inside the `tags = {...}` field.
 
