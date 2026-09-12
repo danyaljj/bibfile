@@ -30,5 +30,6 @@ if len(repeated_entries) > 0:
 
 import bibtexparser
 
-with open('ref.bib') as bibtex_file:
-  bib_database = bibtexparser.load(bibtex_file)
+bib_library = bibtexparser.parse_file('ref.bib')
+if bib_library.failed_blocks:
+  raise Exception(f"{len(bib_library.failed_blocks)} bibtex blocks failed to parse")
