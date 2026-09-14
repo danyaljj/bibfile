@@ -29,7 +29,14 @@ if len(repeated_entries) > 0:
 
 
 import bibtexparser
+from bibtexparser.bparser import BibTexParser
 
-bib_library = bibtexparser.parse_file('ref.bib')
-if bib_library.failed_blocks:
-  raise Exception(f"{len(bib_library.failed_blocks)} bibtex blocks failed to parse")
+# bibtexparser v1 API: loading raises on malformed bibtex
+parser = BibTexParser(common_strings=True)
+with open('ref.bib') as bibtex_file:
+  bib_database = bibtexparser.load(bibtex_file, parser=parser)
+
+if len(bib_database.entries) == 0:
+  raise Exception("no bibtex entries were parsed from ref.bib")
+
+print(f" * parsed {len(bib_database.entries)} entries with bibtexparser v1")

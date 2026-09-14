@@ -1,4 +1,4 @@
 pybtex
 unicode
-bibtexparser
+bibtexparser<2
 
